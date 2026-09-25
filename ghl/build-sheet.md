@@ -11,26 +11,15 @@ Build these in order. Each section is a literal paste-in — the goal is zero de
 
 ---
 
-## 2. Pipeline — rename existing stages, don't build a new one
+## 2. Pipeline — use GHL's AI pipeline generator
 
-The sub-account came pre-loaded (from the agency's default snapshot) with an 11-stage **"Marketing Pipeline"** that maps cleanly onto the Honey Method journey — richer than the original 8-stage plan, actually, since it splits "asked for a referral" from "asked for a review." No new pipeline needed. In GHL: **Settings → Pipelines → Marketing Pipeline**, rename the pipeline itself and each stage per this table:
+GHL's pipeline builder has a "Generate with AI" option (describe the pipeline, it drafts the stages). Use it instead of hand-renaming — go to **Settings → Pipelines → Create Pipeline → Generate with AI** and paste this:
 
-| # | Current name | Rename to |
-|---|---|---|
-| 1 | Marketing Pipeline *(pipeline name)* | **Home Reset Pipeline** |
-| 2 | New Lead | New Lead *(keep)* |
-| 3 | Contacted | Intake Sent |
-| 4 | Qualified | Walkthrough Booked |
-| 5 | Estimate Sent | Quoted |
-| 6 | Won Bid – Booked Job | Booked (Waiver Signed) |
-| 7 | Lost Bid | Lost |
-| 8 | Job Completed | In Progress |
-| 9 | Payment Complete | Final Visit / Payout Pending |
-| 10 | Follow-Up | Won — Referral Asked |
-| 11 | Review Requested | Review Requested *(keep)* |
-| 12 | Review Received | Past Client |
+> Create a pipeline called "Home Reset Pipeline" for a home organizing and resale business run by a mother-daughter team. Stages in order: New Lead (a referral just reached out), Intake Sent (intake form sent, waiting on it back), Walkthrough Booked (free discovery call scheduled), Quoted (walkthrough done, quote sent), Booked - Waiver Signed (client signed the waiver and visits are scheduled), In Progress (job underway, may span multiple visits), Final Visit - Payout Pending (last visit done, any resale payout still owed to the client), Won - Referral Asked (job complete, referral ask sent), Review Requested (asked for an online review), Past Client (referral and review cycle complete), and Lost (didn't book or the job fell through).
 
-Each opportunity in this pipeline = one client engagement (matches one row in `tracker/clients.csv`). Exact pipeline/stage IDs are recorded in `ghl/live-ids.md` for API reference — you don't need them for the UI rename.
+Each opportunity in this pipeline = one client engagement (matches one row in `tracker/clients.csv`).
+
+**Faster alternative:** the sub-account already came pre-loaded (from the agency's default snapshot) with an 11-stage "Marketing Pipeline" whose stages map 1:1 onto the list above — if renaming 11 existing labels is quicker for you than reviewing an AI-generated pipeline, do that instead (old name → new name is the same list, in the same order). Either path lands in the same place; exact pipeline/stage IDs for the existing snapshot pipeline are in `ghl/live-ids.md` if you go that route.
 
 ---
 
@@ -97,56 +86,33 @@ On submit: add tag `intake-sent` → `lead-new`, move opportunity to **Intake Se
 
 ---
 
-## 7. Workflows
+## 7. Workflows — use GHL's Workflow AI
 
-Write these in GHL's automation builder exactly as specified — trigger, then steps, then the copy. All copy follows the voice rules in `BRAND.md` and `sop/10-coaching-language-guide.md`: warm, specific, never shame-based. Per `BRAND.md` rule 5, these transactional messages keep the taglines but dial back the deeper slang (Reveal, House of Honey, etc. stay for the workbook and site, where the audience has already opted in) — clear beats clever when it's a booking reminder.
+Each workflow below is written as one paste-ready paragraph for GHL's **Automation → Create Workflow → Generate with AI** box. Don't retype it as a manual trigger/steps table — paste the whole paragraph in and let it draft the workflow, then just glance over what it built before publishing. All copy follows the voice rules in `BRAND.md` and `sop/10-coaching-language-guide.md`. Per `BRAND.md` rule 5, these transactional messages keep the taglines but dial back the deeper slang (Reveal, House of Honey stay for the workbook and site) — clear beats clever in a booking reminder.
 
 ### A. New Lead Welcome
-**Trigger:** Intake form submitted
-**Steps:**
-1. Send email/SMS immediately:
-   > "Honey! No shame — we've got you. Thanks for reaching out to The Honey Method. We got your form and we're excited to help. We'll be in touch within 24 hours to open the library and set up your free walkthrough — no prep needed."
-2. Internal task for Marie: "Review intake form for [Contact Name], schedule walkthrough"
+> When a contact submits the intake form, add the tags lead-new and intake-sent, move their opportunity in the Home Reset Pipeline to the Intake Sent stage, and immediately send them this message by both email and SMS: "Honey! No shame — we've got you. Thanks for reaching out to The Honey Method. We got your form and we're excited to help. We'll be in touch within 24 hours to open the library and set up your free walkthrough — no prep needed." Then create a task for Marie: "Review intake form for [contact name], schedule walkthrough."
 
 ### B. Walkthrough Reminder
-**Trigger:** Appointment booked on Discovery Walkthrough calendar
-**Steps:** confirmation (calendar default above) + 24hr reminder + 2hr reminder (calendar defaults above)
+> When an appointment is booked on the Free Discovery Walkthrough calendar, send this confirmation immediately: "You're booked! We'll walk the space together, ask what's driving you crazy, and send a quote within 24 hours. No prep needed." Then send a reminder 24 hours before the appointment, and another reminder 2 hours before.
 
 ### C. Quote Follow-Up
-**Trigger:** Tag `quoted` added, no booking within 3 days
-**Steps:**
-1. Wait 3 days
-2. If still no booking, send:
-   > "Just checking in, Honey — any questions about the plan we sent over? Happy to adjust the package or timeline to fit what works for you."
+> When a contact is tagged quoted, wait 3 days. If their opportunity has not reached the Booked stage by then, send: "Just checking in, Honey — any questions about the plan we sent over? Happy to adjust the package or timeline to fit what works for you."
 
 ### D. Session Reminder
-**Trigger:** Appointment booked on Organizing Session calendar
-**Steps:** confirmation + 48hr reminder + 24hr reminder (calendar defaults above)
+> When an appointment is booked on the Organizing Session calendar, send this confirmation immediately: "You're on the calendar for [date]! One thing to know: don't tidy up before we arrive — we want to see the space as it really lives." Then send a reminder 48 hours before, and another reminder 24 hours before.
 
 ### E. Final Visit → Referral Ask
-**Trigger:** Tag `final-visit-sent` added
-**Steps:**
-1. Wait 4 days (let the workbook land and the feeling settle in first)
-2. Send:
-   > "Honey, you deserve more — and so does anyone you know who's drowning in their own clutter. If a friend, a family member, or anyone comes to mind, we'd love an introduction. Refer someone and you both get $20 off, plus a spot in the House of Honey."
-3. Add tag `referral-asked`, move opportunity to **Won — Referral Asked**
+> When a contact is tagged final-visit-sent, wait 4 days, then send: "Honey, you deserve more — and so does anyone you know who's drowning in their own clutter. If a friend, a family member, or anyone comes to mind, we'd love an introduction. Refer someone and you both get $20 off, plus a spot in the House of Honey." Then add the tag referral-asked and move their opportunity to the Won — Referral Asked stage.
 
 ### F. Sell-It-For-You Payout Reminder (internal only, not client-facing)
-**Trigger:** Tag `payout-pending` added
-**Steps:**
-1. Create internal task for Marie: "Pay [Contact Name] their 70% Sell-It-For-You payout — due within 5 business days" with a due date 5 business days out
-2. On task completion, remove `payout-pending` tag
+> When a contact is tagged payout-pending, create a task for Marie due in 5 business days: "Pay [contact name] their 70% Sell-It-For-You payout." When that task is marked complete, remove the payout-pending tag.
 
 ### G. Maintenance Upsell
-**Trigger:** 60 days after opportunity marked **Won**
-**Steps:**
-1. Send:
-   > "It's been about two months since your reset — how's the system holding up, Honey? We offer a quick maintenance visit (1–2 hrs) to reset anything that's drifted. Want to grab a spot?"
+> 60 days after a contact's opportunity is marked Won in the Home Reset Pipeline, send: "It's been about two months since your reset — how's the system holding up, Honey? We offer a quick maintenance visit (1–2 hrs) to reset anything that's drifted. Want to grab a spot?"
 
 ### H. Internal Workbook Reminder
-**Trigger:** Any organizing session appointment marked completed
-**Steps:**
-1. Internal task for Marie/Honey: "Generate + send Progress Report and Workbook for [Contact Name] — due within 24 hours" (see `sop/05` and `sop/06`)
+> When an appointment on the Organizing Session calendar is marked completed, create a task for Marie and Honey due within 24 hours: "Generate and send the Progress Report and Workbook for [contact name]."
 
 ---
 
