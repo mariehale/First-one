@@ -38,7 +38,7 @@ Exactly the 8 active-journey stages, no Won/Lost/Abandoned or review stages — 
 `lead-new` `intake-sent` `quoted` `waiver-signed` `in-progress` `final-visit-sent` `payout-pending` `referral-asked` `past-client` `marketplace-buyer` `review-received`
 
 ## Calendars
-Created via API as `event`-type calendars, which don't require a `teamMembers` user ID (unlike personal/round-robin types).
+Created via API as `event`-type calendars, which don't require a `teamMembers` user ID (unlike personal/round-robin types). Business hours (Mon–Fri 9–5, Sat 9–1, America/Chicago) set via `createCalendarSchedule` after the fact — the calendars didn't fully "exist" for workflow triggers until this was added (see `build-sheet.md` §5).
 
 | Calendar | ID | Slug |
 |---|---|---|
