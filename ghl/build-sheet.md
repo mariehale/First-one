@@ -83,9 +83,9 @@ Both built as `event`-type calendars (that type doesn't need a `teamMembers` use
 
 ---
 
-## 6. Intake form
+## 6. Intake form — MANUAL ONLY, build in GHL desktop, no AI shortcut
 
-Build as a GHL Form, fields mapped to custom fields above (matches `templates/client-intake-form.md` exactly):
+Confirmed: unlike the pipeline (which GHL's Ask AI built correctly on the first try), forms are not buildable through any AI generator — this one needs the desktop form builder, by hand. Build as a GHL Form, fields mapped to custom fields above (matches `templates/client-intake-form.md` exactly):
 
 1. Name / phone / email / address → standard contact fields
 2. Which space(s)? → maps to **Spaces**
@@ -105,9 +105,11 @@ On submit: add tag `intake-sent` → `lead-new`, move opportunity to **Intake Se
 
 ## 7. Workflows — use GHL's Workflow AI
 
-Each workflow below is written as one paste-ready paragraph for GHL's **Automation → Create Workflow → Generate with AI** box. Don't retype it as a manual trigger/steps table — paste the whole paragraph in and let it draft the workflow, then just glance over what it built before publishing. All copy follows the voice rules in `BRAND.md` and `sop/10-coaching-language-guide.md`. Per `BRAND.md` rule 5, these transactional messages keep the taglines but dial back the deeper slang (Reveal, House of Honey stay for the workbook and site) — clear beats clever in a booking reminder.
+Each workflow below is written as one paste-ready paragraph for GHL's **Automation → Create Workflow → Generate with AI** box (the same "Ask AI" that built the pipeline). Don't retype it as a manual trigger/steps table — paste the whole paragraph in and let it draft the workflow, then just glance over what it built before publishing. All copy follows the voice rules in `BRAND.md` and `sop/10-coaching-language-guide.md`. Per `BRAND.md` rule 5, these transactional messages keep the taglines but dial back the deeper slang (Reveal, House of Honey stay for the workbook and site) — clear beats clever in a booking reminder.
 
-### A. New Lead Welcome
+**Build order:** Workflow A's trigger is the intake form, which doesn't exist until §6 is done manually. Build **B through I first** — none of them depend on the form, they trigger off calendars, tags, and pipeline status that already exist — then come back to A last, once the form is live.
+
+### A. New Lead Welcome (build this last, after §6)
 > When a contact submits the intake form, add the tags lead-new and intake-sent, move their opportunity in the Home Reset Pipeline to the Intake Sent stage, and immediately send them this message by both email and SMS: "Honey! No shame — we've got you. Thanks for reaching out to Honey!. We got your form and we're excited to help. We'll be in touch within 24 hours to open the library and set up your free walkthrough — no prep needed." Then create a task for Marie: "Review intake form for [contact name], schedule walkthrough."
 
 ### B. Walkthrough Reminder
