@@ -11,7 +11,7 @@ Build these in order. Each section is a literal paste-in — the goal is zero de
 
 ---
 
-## 2. Pipeline — use GHL's AI pipeline generator
+## 2. Pipeline — DONE, built via GHL's Ask AI (`ER193vIAQXjqDlYIxV1K`, see `live-ids.md`)
 
 **GHL conventions (Marie's corrections, keep these permanently):**
 1. Every pipeline already has native **Won**, **Lost**, and **Abandoned** opportunity statuses built in. Never build a custom stage for these — a "Lost" or "Past Client" stage lets an opportunity sit there forever instead of actually closing, which breaks the pipeline's conversion/win-rate reporting. Stages are for the *active* journey only; closing happens by changing the opportunity's native status, not by moving it to a terminal stage.
@@ -139,7 +139,7 @@ Each workflow below is written as one paste-ready paragraph for GHL's **Automati
 ## 8. Status
 - [x] Custom fields and tags — created via API, see `ghl/live-ids.md`
 - [x] Calendars — created via API, see §5
-- [x] Pipeline — exists (renamed from the agency's default snapshot), see §2 above for the rename table
+- [x] Pipeline — built via GHL's Ask AI, exactly 8 stages, no Won/Lost/Abandoned or review stages, see §2
 - [ ] Forms, workflows, microsite — still to build from this sheet (§6, §7) and `microsite-copy.md`
 
 Once forms/workflows/site are built, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.

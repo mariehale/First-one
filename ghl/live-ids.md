@@ -5,22 +5,23 @@ Reference only — not needed for the UI work in `build-sheet.md`. Used for API 
 **Location ID:** `2Q37DK8iQ4ORYHL95ElX`
 **Company (agency) ID:** `EMbO9rqpNSi4I4cLyzjS`
 
-## Pipeline
-**Pipeline ID:** `ljUHn2NXpQIQ7rDpZwEU` (rename to "Home Reset Pipeline" — see build-sheet.md §2)
+## Pipeline — DONE, built via GHL's Ask AI
+**Pipeline ID:** `ER193vIAQXjqDlYIxV1K` ("Home Reset Pipeline")
 
-| Stage (new name) | Stage ID |
+| Stage | Stage ID |
 |---|---|
-| New Lead | `29c46f94-2f5a-4cb8-bc2a-6d8884065413` |
-| Intake Sent | `f8bb21cf-e894-4442-a600-a58d5a516399` |
-| Walkthrough Booked | `c2b01161-801d-4a91-aca6-581583ce9128` |
-| Quoted | `28fabef2-229f-4c11-8f40-9b663013d4e4` |
-| Booked (Waiver Signed) | `01c68069-a52e-420a-86a3-402c2944d3c5` |
-| In Progress | `b0033649-0f05-4f91-8e0a-3f85d51e528a` |
-| Final Visit / Payout Pending | `fc6627d5-228e-467f-bec6-bed94357462a` |
-| Referral Asked | `2780a017-901c-4376-bcae-71c061e8a1d7` |
-| Review Requested | `02f6d3a8-dc95-44df-a722-e8abacde0bab` |
+| New Lead | `8275b3aa-2bb8-4f11-a579-69c974f495d4` |
+| Intake Sent | `07846d4c-2a25-45cc-9d41-53934f998143` |
+| Walkthrough Booked | `85be8a16-9edd-4e5e-8d54-f8e8dcc109ea` |
+| Quoted | `bdafa8b9-0c1f-4c7f-bfd0-4a42da1a3b09` |
+| Booked - Waiver Signed | `980a74be-368c-4b32-a547-24312c9f265d` |
+| In Progress | `1a49485c-c159-4351-9a2e-9b6c0656ba12` |
+| Final Visit - Payout Pending | `dd99989b-178e-486d-91d5-7030938d9491` |
+| Referral Asked | `def4be08-04cb-4915-b2ca-6a8e42b79592` |
 
-**Deleted, not renamed** (native Won/Lost status covers these — see `build-sheet.md` §2): the old "Lost Bid" (`d146aa5b-4775-4530-82ef-5ef6baacd5ec`) and "Review Received" (`bc0d73ec-f7bd-42ac-9c2d-9feb2e5b5632`) stages.
+Exactly the 8 active-journey stages, no Won/Lost/Abandoned or review stages — built correctly on the first pass.
+
+**Leftover, unused:** the original pre-loaded "Marketing Pipeline" (`ljUHn2NXpQIQ7rDpZwEU`, 11 stages) is still in the account since a new pipeline was created instead of renaming it. Safe to delete whenever, no rush.
 
 ## Custom fields (contact-level)
 | Field | Field key | ID |
