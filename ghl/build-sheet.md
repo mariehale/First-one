@@ -63,6 +63,8 @@ These mirror `tracker/clients.csv` exactly — once GHL is live, GHL becomes the
 ## 4. Tags — DONE, created via API
 `lead-new` · `intake-sent` · `quoted` · `waiver-signed` · `in-progress` · `final-visit-sent` · `payout-pending` · `referral-asked` · `past-client` · `marketplace-buyer` · `review-received`
 
+**To add manually (Settings → Tags, seconds each):** `safety-cleared` · `safety-declined` — for the safety check in `sop/11-safety-screening.md`. Add these before building Workflows A and J, since both reference them.
+
 (Two tags came pre-loaded with the snapshot — `follow-up` and `warm lead` — left alone since they don't conflict; ignore or delete them later if they're never used.)
 
 ---
@@ -92,6 +94,8 @@ Both built as `event`-type calendars (that type doesn't need a `teamMembers` use
 Confirmed: unlike the pipeline (which GHL's Ask AI built correctly on the first try), forms are not buildable through any AI generator — this one needs the desktop form builder, by hand. Build as a GHL Form, fields mapped to custom fields above (matches `templates/client-intake-form.md` exactly):
 
 1. Name / phone / email / address → standard contact fields
+   - **Who referred you to us?** → maps to **Referred By**, **required** (safety check step 1, `sop/11`)
+   - **Will anyone besides you be home during sessions?** → short text
 2. Which space(s)? → maps to **Spaces**
 3. What's driving you crazy about this space? → long text
 4. Goal (usable vs. picture-perfect)? → long text
@@ -111,10 +115,10 @@ On submit: add tag `intake-sent` → `lead-new`, move opportunity to **Intake Se
 
 Each workflow below is written as one paste-ready paragraph for GHL's **Automation → Create Workflow → Generate with AI** box (the same "Ask AI" that built the pipeline). Don't retype it as a manual trigger/steps table — paste the whole paragraph in and let it draft the workflow, then just glance over what it built before publishing. All copy follows the voice rules in `BRAND.md` and `sop/10-coaching-language-guide.md`. Per `BRAND.md` rule 5, these transactional messages keep the taglines but dial back the deeper slang (Reveal, House of Honey stay for the workbook and site) — clear beats clever in a booking reminder.
 
-**Build order:** Workflow A's trigger is the intake form, which doesn't exist until §6 is done manually. Build **B through I first** — none of them depend on the form, they trigger off calendars, tags, and pipeline status that already exist — then come back to A last, once the form is live.
+**Build order:** Workflow A's trigger is the intake form, which doesn't exist until §6 is done manually. Build **B through I first** (then J once the two safety tags exist) — none of them depend on the form, they trigger off calendars, tags, and pipeline status that already exist — then come back to A last, once the form is live.
 
 ### A. New Lead Welcome (build this last, after §6)
-> When a contact submits the intake form, add the tags lead-new and intake-sent, move their opportunity in the Home Reset Pipeline to the Intake Sent stage, and immediately send them this message by both email and SMS: "Honey! No shame — we've got you. Thanks for reaching out to Honey!. We got your form and we're excited to help. We'll be in touch within 24 hours to open the library and set up your free walkthrough — no prep needed." Then create a task for Marie: "Review intake form for [contact name], schedule walkthrough."
+> When a contact submits the intake form, add the tags lead-new and intake-sent, move their opportunity in the Home Reset Pipeline to the Intake Sent stage, and immediately send them this message by both email and SMS: "Honey! No shame — we've got you. Thanks for reaching out to Honey!. We got your form and we're excited to help. We'll be in touch within 24 hours to open the library and set up your free walkthrough — no prep needed." Then create a task for Marie due in 1 day: "Run the safety check for [contact name] (referrer vouches, NSOPW.gov name + address, court records, address check, quick online look). Add tag safety-cleared to send the walkthrough link, or safety-declined to stop." Do not send the walkthrough booking link in this workflow.
 
 ### B. Walkthrough Reminder — DONE, built and published
 > When an appointment is booked on the Free Discovery Walkthrough calendar, send this confirmation immediately: "You're booked! We'll walk the space together, ask what's driving you crazy, and send a quote within 24 hours. No prep needed." Then send a reminder 24 hours before the appointment, and another reminder 2 hours before.
@@ -140,12 +144,18 @@ Each workflow below is written as one paste-ready paragraph for GHL's **Automati
 ### I. Review Request Nudges
 > When a contact is tagged final-visit-sent, wait 5 days, then send: "If you have 60 seconds, a review would mean the world to us — and it helps other overwhelmed people find their way to Honey!. [review link]" Wait 5 more days. If the contact is not tagged review-received by then, send a second, gentler nudge: "No pressure at all — but if you have a quick moment, we'd still love a review. [review link]" Wait 4 more days (14 days total since the first message). If the contact is still not tagged review-received, create a task for Marie: "No review yet from [contact name] after two nudges and two weeks — follow up personally or let it go." When the review-received tag is added at any point, end this workflow for that contact.
 
+### J. Safety Cleared → Send Walkthrough Link (build after the two safety tags exist)
+> When the tag safety-cleared is added to a contact, send them this message by both email and SMS: "Great news, Honey — the library is open! Grab a time for your free walkthrough here: [Free Discovery Walkthrough booking link]. No prep needed, and please don't tidy up first." Then move their opportunity in the Home Reset Pipeline to the Walkthrough Booked stage only after they book an appointment on the Free Discovery Walkthrough calendar. When the tag safety-declined is added instead, send nothing automatically, move the opportunity status to Lost, and create a task for Marie: "Send the polite decline to [contact name] (script in sop/11)."
+
+Why a separate workflow: the walkthrough calendar link is never public (not on the microsite, not in Workflow A). The only way a stranger gets into our calendar is through `safety-cleared`. See `sop/11-safety-screening.md`.
+
 ---
 
 ## 8. Status
 - [x] Custom fields and tags — created via API, see `ghl/live-ids.md`
 - [x] Calendars — created via API, see §5
 - [x] Pipeline — built via GHL's Ask AI, exactly 8 stages, no Won/Lost/Abandoned or review stages, see §2
+- [ ] Tags `safety-cleared` and `safety-declined` — add manually, see §4
 - [ ] Forms, workflows, microsite — still to build from this sheet (§6, §7) and `microsite-copy.md`
 
 Once forms/workflows/site are built, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.

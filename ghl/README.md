@@ -13,8 +13,9 @@ This runs the business's CRM/booking/automation layer in GoHighLevel, built to t
 - [x] Custom fields — all 7 created via API
 - [x] Tags — all 11 created via API (includes `review-received`, added for the review-nudge workflow)
 - [x] Calendars — both created via API as `event`-type calendars (no user ID needed after all). One manual touch-up: reminder notifications need to be toggled on in the GHL UI, see `build-sheet.md` §5
+- [ ] Tags `safety-cleared` / `safety-declined` — add manually in Settings → Tags (safety check, `sop/11`)
 - [ ] Intake form — **manual only**, confirmed no AI shortcut exists for forms (unlike the pipeline). Build in GHL desktop from `build-sheet.md` §6
-- [ ] Workflows — paste the 9 prompts in `build-sheet.md` §7 into GHL's Workflow AI (includes Workflow I: two review-request nudges, then an internal alert at 2 weeks if no review)
+- [ ] Workflows — paste the 10 prompts in `build-sheet.md` §7 into GHL's Workflow AI (includes Workflow I: two review-request nudges, then an internal alert at 2 weeks if no review)
 - [ ] Microsite built from `microsite-copy.md`
 
 ## Why AI-generator prompts, not manual steps
@@ -28,4 +29,4 @@ What the API **can** do directly, no UI needed:
 - Create/update contacts and opportunities, once a pipeline exists
 - Create appointments
 
-**Still on you:** the intake form (manual, desktop, §6), the 9 workflows (Ask AI, build B–I first, A last — §7), and the microsite from `microsite-copy.md`, plus toggling on calendar reminders. Once those are in place, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.
+**Still on you:** the intake form (manual, desktop, §6), the 10 workflows (Ask AI, build B–I first, then J, A last — §7), and the microsite from `microsite-copy.md`, plus toggling on calendar reminders. Once those are in place, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.

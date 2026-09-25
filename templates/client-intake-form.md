@@ -3,6 +3,8 @@
 # Client Intake Form
 
 1. Name / phone / email / address:
+   - Who referred you to us? (We're referral-only — this one's required.)
+   - Will anyone besides you be home during sessions? (Just so we know who we'll meet.)
 2. Which space(s) do you want organized?
 3. What's driving you crazy the most about this space?
 4. What's your goal — just usable, or picture-perfect?

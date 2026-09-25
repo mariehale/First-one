@@ -11,7 +11,7 @@ A mother-daughter team that organizes homes, sells what clients don't need, and 
 ## Start here
 | If you want to... | Go to |
 |---|---|
-| See the whole client journey, step by step | `sop/` (read `01` through `10` in order, once) |
+| See the whole client journey, step by step | `sop/` (read `01` through `11` in order, once) |
 | Copy-paste the actual AI prompts | `prompts/` |
 | Fill in a report, quote, listing, waiver, or the workbook | `templates/` |
 | Log a client, a visit, a sale, or an expense | `tracker/` |
@@ -42,6 +42,7 @@ A mother-daughter team that organizes homes, sells what clients don't need, and 
 8. **Buyer & money management** (`sop/08`) — safety rules, message scripts, payouts.
 9. **Things we almost forgot** (`sop/09`) — insurance, waivers, minor-labor rules, taxes, backups, reviews, recurring revenue.
 10. **Coaching language guide** (`sop/10`) — the shame-aware scripts behind every client-facing word.
+11. **Safety screening** (`sop/11`) — Honey's idea: a free 15-minute check on every new client before they get our calendar, plus on-site rules (never alone, check-in text, code word).
 
 Once the GHL setup in `ghl/` is live, it becomes the real CRM — the pipeline stages there track this same journey, and `tracker/clients.csv`/`sessions.csv` become a backup export rather than the primary log.
 
@@ -70,6 +71,7 @@ Same pipeline as client Sell-It-For-You items (`sop/07`), tracked in `tracker/in
 - [ ] Buy the supply kit (label maker, clear bins, drawer dividers, trash bags, 4 labeled Keep/Sell/Donate/Toss bins, cleaning supplies, measuring tape)
 - [ ] Create the GHL sub-account and build it from `ghl/build-sheet.md` and `ghl/microsite-copy.md`
 - [ ] Get liability insurance quotes (`sop/09`)
+- [ ] Pick our code word and our check-in adult (`sop/11`, Part 3)
 - [ ] Organize one space in our own house using the full SOP flow, start to finish, as a dry run
 
 **Week 2**

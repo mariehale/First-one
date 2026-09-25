@@ -5,7 +5,8 @@ Do these steps in order, every time. Same order, every client — that consisten
 1. **First contact.** Whoever reaches out (phone, text, FB message, referral), reply within a few hours with:
    > "Thanks for reaching out! We'd love to help. Can I ask a few quick questions, or would you rather hop on a free 15-minute call?"
 2. **Send the intake form.** Use `templates/client-intake-form.md`. Get it back before booking a walkthrough — it tells you what you're walking into and flags anything sensitive (sentimental items, a family member's things, pets, allergies).
-3. **Free walkthrough or video call.**
+   **Then run the safety check (`sop/11-safety-screening.md`) before sending the walkthrough link.** Referrer vouches, registry, court records, address, quick online look — 15 minutes, $0. Not cleared = polite decline.
+3. **Free walkthrough or video call.** Marie goes to the first walkthrough; confirm the person matches the name on the form (quick ID glance, `sop/11` Part 5).
    - Walk every space that might be included.
    - Ask: "What's driving you crazy the most?" and "What's your goal — just usable, or magazine-tidy?"
    - Take rough "before" phone photos (not the full protocol yet — that's step 5, once they're a booked client).

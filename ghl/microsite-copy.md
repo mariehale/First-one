@@ -10,13 +10,13 @@ Build this as a one-page site in GHL's site/funnel builder (or "AI Studio" if it
 
 ## Nav bar
 - Logo/wordmark: **Honey!**
-- Button: **Get in touch** → links to the referral section / booking calendar
+- Button: **Get in touch** → links to the referral section (never straight to the calendar, see `sop/11`)
 
 ## Hero
 - Eyebrow: `HOME ORGANIZING & RESALE, REFERRAL ONLY`
 - Headline: **Clutter, Meet Your Match.**
 - Subhead: "Honey! No shame — we've got you. A mother-daughter team that clears the clutter, builds a system you'll actually keep, and sells what you don't need. We read the mess, never the person."
-- Button 1 (primary): **The Library Is Open** → Discovery Walkthrough calendar link (this replaces a generic "Book a call" — it's the free, loving read of your space)
+- Button 1 (primary): **The Library Is Open** → scrolls to the House of Honey "Say hello" form. **Do not link the walkthrough calendar publicly** — the booking link only goes out after the safety check clears (`sop/11`, Workflow J)
 - Button 2 (ghost): **See how it works** → jumps to How It Works section
 
 ## Who's showing up at your door
