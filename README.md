@@ -6,6 +6,8 @@
 
 A mother-daughter team that organizes homes, sells what clients don't need, and helps them let go of the guilt around how it got that way. This repo is the operating manual: every step-by-step process, every AI prompt, every template, and every tracker the business runs on.
 
+**This is a small, referral-only side hustle by default.** Client photos are private (see `templates/liability-waiver.md` for the exact consent tiers) — we're not running public marketing to grow this. Referrals are the primary growth engine (see `sop/09`, section 7); public posting is kept in the repo only as an optional fallback, not the plan.
+
 **Why "AI-compatible" matters here:** every job produces the same predictable outputs — an Initial State Report, a Progress Report per visit, and a branded Coaching Workbook per visit — generated the same way every time by pasting photos into Claude with the prompts in `prompts/`. Same process every time is also exactly what makes this work for Honey: nothing is improvised, every job follows the same numbered steps.
 
 ## Start here
@@ -75,11 +77,13 @@ Same pipeline as client Sell-It-For-You items (`sop/07`), tracked in `tracker/in
 - [ ] Organize a second space at home
 
 **Week 3**
-- [ ] Post before/afters in local Facebook groups and on Nextdoor
-- [ ] Book 1–2 discounted "portfolio" jobs with friends (photos + review in exchange)
+- [ ] Book 1–2 discounted "practice" jobs with friends or family (photos + honest feedback in exchange)
+- [ ] Ask each one: "who else do you know who'd want this?" — this is the referral list you'll work from
+- [ ] (Optional fallback only, not the default plan) post before/afters in local Facebook groups or Nextdoor — see `templates/social-post.md`
 
 **Week 4**
-- [ ] First real paid client, full journey start to finish
+- [ ] First real paid client via referral, full journey start to finish
+- [ ] Ask for a referral in their final workbook (`sop/09`, section 7) and log who sent them in `tracker/clients.csv`
 - [ ] Review the trackers: what made the most per hour, what to change
 
 ## Repo map

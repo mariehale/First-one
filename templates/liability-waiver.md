@@ -20,8 +20,11 @@ The client confirms that any items designated for sale or donation are legally t
 We will handle all items with reasonable care. We are not liable for pre-existing damage, normal wear from handling, or loss of items the client did not disclose as fragile or high-value in advance. [Insert your general liability insurance policy number/carrier here once obtained — see sop/09-things-we-almost-forgot.md.]
 
 ## 4. Photo Release
-☐ I agree that before/after photos from my session(s) may be used in The Honey Method's portfolio, website, and social media (first names/identifying details omitted unless I say otherwise).
-☐ Photos may be taken for internal use (reports, workbooks) only — not for marketing.
+Photos are always taken for your reports and workbook (`templates/initial-state-report.md`, `templates/progress-report.md`, `templates/workbook.html`) — that use is covered under Services above, not this release. This section only covers whether they're ever seen by anyone besides you. Pick one:
+
+☐ **Private only.** These photos are never shown to anyone outside our work together — not other clients, not the internet.
+☐ **Private + anonymized referral show-and-tell.** We may show an anonymized before/after (no name, no address, no identifying details) in person or in a quote to a prospective client — never posted publicly online.
+☐ **Public marketing okay.** These photos may also be used in The Honey Method's portfolio, website, or social media (first names/identifying details omitted unless you say otherwise).
 
 ## 5. Payment
 Payment is due [on completion of each visit / per the agreed schedule]. Cancellations within [X days] of a scheduled visit forfeit the deposit / incur a [fee].

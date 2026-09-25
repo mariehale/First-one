@@ -7,7 +7,7 @@ Organizers work inside other people's homes with other people's belongings. Look
 
 ## 2. Waivers & consent
 - Never start a job without the signed `templates/liability-waiver.md` (liability + photo release combined).
-- The photo release matters separately from liability: you need explicit permission to use before/after photos in marketing/portfolio, vs. keeping them private-use-only. Some clients will say yes to one and no to the other — respect that per-client, and note it in `tracker/clients.csv`.
+- The photo release matters separately from liability: this business runs private-photos-only by default (referral-only, not publicly advertised) — see `BRAND.md`. The waiver has three tiers: private only, private + anonymized referral show-and-tell, or public marketing. Get an explicit pick per client, not an assumption, and log it in `tracker/clients.csv` (`photo_consent` column).
 
 ## 3. Honey is a minor working in the business
 Rules vary by state. Before this becomes more than an occasional family activity, check your state's child-labor rules for:
@@ -27,8 +27,13 @@ Right now this repo's CSVs are the whole system, which is fine at low volume. On
 ## 6. Photo backup & ownership
 Before/after photos are both proof of work and your best marketing asset. Keep the Google Drive folder structure from `sop/02-photo-capture-protocol.md` as the single source of truth, and turn on phone auto-backup to Drive so nothing lives only on one device.
 
-## 7. Reviews & referrals
-Ask for a review in the **final** workbook of a job (see `sop/06-coaching-workbook.md`), not before — a finished, felt result gets better reviews than a mid-job ask. Consider a referral discount ($20 off for both people) baked into that same ask.
+## 7. Referrals (the primary growth engine)
+This is a small, referral-only side hustle — no public advertising by default (see `BRAND.md`). That means referrals carry the whole pipeline:
+- Ask for a referral in the **final** workbook of a job (see `sop/06-coaching-workbook.md`), not before — a finished, felt result gets better referrals than a mid-job ask.
+- Consider a referral discount ($20 off for both people) baked into that ask.
+- Track who referred whom in `tracker/clients.csv` (`referred_by` column) so you know who to thank, and can send that person a small thank-you (a discount on their next visit, or a gift card) once the referral books.
+- If a client consented to "private + anonymized referral show-and-tell" on their waiver, that's your best sales tool on a discovery call — a real, anonymized before/after beats any pitch.
+- Public posting (Nextdoor/Facebook groups, `templates/social-post.md`) is kept in the repo as an optional fallback if referrals ever slow down, not the default plan — see `README.md`.
 
 ## 8. Recurring revenue
 Offer a **maintenance visit** (monthly or quarterly, 1–2 hrs, keeping the system going) as an upsell in the final workbook of every full organize. This is usually easier margin than a new full job.

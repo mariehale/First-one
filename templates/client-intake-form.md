@@ -10,6 +10,6 @@
 6. Are there items belonging to someone else (a family member, an estate, a kid who's moved out) that need extra care or a separate conversation before we touch them?
 7. Any pets or allergies we should know about (affects what cleaning supplies we bring)?
 8. Do you want to sell unwanted items (Sell-It-For-You add-on, we keep 30%/you keep 70%), or should everything unwanted just go to donation?
-9. If selling: okay with us using before/after photos in our portfolio/marketing? (Yes / No / Ask me per-photo)
+9. Before/after photo comfort level — pick one: (a) private only, never shown to anyone else, (b) private + okay to show an anonymized before/after to a prospective referral, no identifying details, never posted publicly, or (c) okay to use publicly (portfolio/website/social)? See `templates/liability-waiver.md` for the exact language.
 10. Preferred days/times for visits:
 11. Anything else we should know before we walk in?
