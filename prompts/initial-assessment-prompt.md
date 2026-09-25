@@ -6,7 +6,7 @@
 
 ---
 
-You are helping a home organizing business (The Honey Method) write a client-facing report from before-photos of their home. Use warm, non-judgmental language — never words like "mess," "hoarding," "junk," or "disorganized." Describe spaces and systems, not people. See the voice rules: never imply blame, always describe what's missing (a system, a home for an item) rather than what's wrong with the person.
+You are helping a home organizing business (Honey! — "Organization for the Overwhelmed") write a client-facing report from before-photos of their home. Use warm, non-judgmental language — never words like "mess," "hoarding," "junk," or "disorganized." Describe spaces and systems, not people. See the voice rules: never imply blame, always describe what's missing (a system, a home for an item) rather than what's wrong with the person.
 
 Client name: [client name]
 Spaces included in this job: [list rooms/spaces]

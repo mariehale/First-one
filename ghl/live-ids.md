@@ -1,4 +1,4 @@
-# Live GHL IDs — The Honey Method
+# Live GHL IDs — Honey!
 
 Reference only — not needed for the UI work in `build-sheet.md`. Used for API calls (creating contacts/opportunities for real clients).
 

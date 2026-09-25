@@ -1,11 +1,11 @@
-# GHL Build Sheet — The Honey Method
+# GHL Build Sheet — Honey!
 
 Build these in order. Each section is a literal paste-in — the goal is zero decisions left to make while you're in the GHL UI.
 
 ---
 
 ## 1. Sub-account settings — DONE
-- **Name:** The Honey Method ✅ (sub-account is live: `2Q37DK8iQ4ORYHL95ElX`)
+- **Name:** Honey! — still shows as "The Honey Method" in GHL. No API operation renames a sub-account; rename it yourself in **Settings → Business Profile** (sub-account is live: `2Q37DK8iQ4ORYHL95ElX`)
 - **Timezone:** America/Chicago (already set)
 - **Business phone/email:** 708-486-0921 / marie@atrevenue.com (already set)
 

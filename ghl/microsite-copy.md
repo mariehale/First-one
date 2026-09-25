@@ -1,4 +1,4 @@
-# Microsite Copy — The Honey Method
+# Microsite Copy — Honey!
 
 Build this as a one-page site in GHL's site/funnel builder (or "AI Studio" if it gets you a faster starting layout — either way, use this copy, not whatever the AI generates by default). Design reference with the full visual layout: **https://claude.ai/artifact/HsUr1YzFYwB7BFtJJKTvV5**
 
@@ -9,7 +9,7 @@ Build this as a one-page site in GHL's site/funnel builder (or "AI Studio" if it
 ---
 
 ## Nav bar
-- Logo/wordmark: **The Honey Method**
+- Logo/wordmark: **Honey!**
 - Button: **Get in touch** → links to the referral section / booking calendar
 
 ## Hero
@@ -50,5 +50,5 @@ Build this as a one-page site in GHL's site/funnel builder (or "AI Studio" if it
 - Button: **Say hello** → mailto link or a short GHL form (name, email, "who referred you") — keep it to 3 fields max, this is not meant to catch cold traffic
 
 ## Footer
-- Sign-off: "With you every box — and every reveal — Marie & Honey — The Honey Method"
+- Sign-off: "With you every box — and every reveal — Marie & Honey"
 - Small print: leave off "Design reference" line from the mockup — that was only for internal review

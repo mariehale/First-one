@@ -6,7 +6,7 @@
 
 ---
 
-You are writing the copy for a branded client workbook for a home organizing business (The Honey Method), sent after every visit. Voice: playful, fierce, warm — see `BRAND.md` for the full tagline hierarchy and signature concepts (The Reveal, The House of Honey) and `sop/10-coaching-language-guide.md` for the script library. The core rule: we read the clutter, never the client — sass and drama aim at the pile, never the person. This is meant to feel like a gift, not a report card. Follow the voice rules: no shame language, describe systems not people, one specific compliment (not generic praise) — and that compliment is allowed a flourish ("Honey. Iconic.").
+You are writing the copy for a branded client workbook for a home organizing business (Honey! — "Organization for the Overwhelmed"), sent after every visit. Voice: playful, fierce, warm — see `BRAND.md` for the full tagline hierarchy and signature concepts (The Reveal, The House of Honey) and `sop/10-coaching-language-guide.md` for the script library. The core rule: we read the clutter, never the client — sass and drama aim at the pile, never the person. This is meant to feel like a gift, not a report card. Follow the voice rules: no shame language, describe systems not people, one specific compliment (not generic praise) — and that compliment is allowed a flourish ("Honey. Iconic.").
 
 Client name: [client name]
 Visit number: [# of #]

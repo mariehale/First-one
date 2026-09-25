@@ -1,4 +1,4 @@
-# GHL Setup — The Honey Method
+# GHL Setup — Honey!
 
 This runs the business's CRM/booking/automation layer in GoHighLevel, built to the same standard as a real, scaling business — not a bare-bones side-hustle setup.
 
@@ -8,8 +8,8 @@ This runs the business's CRM/booking/automation layer in GoHighLevel, built to t
 - **`live-ids.md`** — the real location/pipeline/field/tag IDs from the live sub-account, for API reference.
 
 ## Status
-- [x] Sub-account live: **The Honey Method** (`2Q37DK8iQ4ORYHL95ElX`)
-- [x] Pipeline exists — came pre-loaded with 11 stages from the agency snapshot, mapped onto the Honey Method journey (`build-sheet.md` §2 has both the AI-generate prompt and the faster rename-only path)
+- [x] Sub-account live (`2Q37DK8iQ4ORYHL95ElX`) — [ ] still displays as "The Honey Method" in GHL; rename it to **Honey!** in Settings → Business Profile (no API for this, see below)
+- [x] Pipeline exists — came pre-loaded with 11 stages from the agency snapshot, mapped onto the Honey! journey (`build-sheet.md` §2 has both the AI-generate prompt and the faster rename-only path)
 - [x] Custom fields — all 7 created via API
 - [x] Tags — all 10 created via API
 - [x] Calendars — both created via API as `event`-type calendars (no user ID needed after all). One manual touch-up: reminder notifications need to be toggled on in the GHL UI, see `build-sheet.md` §5

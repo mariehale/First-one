@@ -3,7 +3,8 @@
 Everything in this repo (reports, workbooks, listings, emails, the GHL setup, the microsite) uses this so it all feels like one business, not scattered documents. Name and identity are confirmed — not a placeholder.
 
 ## Identity
-- **Business name:** The Honey Method
+- **Business name:** Honey!
+- **Masthead tagline:** Organization for the Overwhelmed.
 - **One-liner:** A mother-daughter team that organizes your home, sells what you don't need, and reads your clutter with love until you're ready to let it go.
 - **Voice (3 words):** Playful, fierce, warm.
 - **The rule everything else follows:** *We read the clutter, never the client.* All the sass, drama, and shade is aimed at the pile of junk mail — never at the person who let it pile up. Same as a good drag mother reading her daughters: it's tough love with a hand extended the whole time.
@@ -13,7 +14,8 @@ Different lines for different moments — pick the one that fits where the clien
 
 | Line | Use it for |
 |---|---|
-| **"Clutter, Meet Your Match."** | Hero line — masthead, site headline, first impression |
+| **"Organization for the Overwhelmed."** | Masthead — always paired with the name: site header, GHL account, business cards |
+| **"Clutter, Meet Your Match."** | Campaign headline — site hero, bold declarative moments |
 | **"Honey! No Shame — We've Got You."** | First touch: intake form header, waiver opening line, walking in the door |
 | **"Honey, Let It Go."** | The letting-go moment — mid-session, workbook "Habit of the Week" |
 | **"Honey, You Deserve More."** | Referral ask, self-worth beats, closing notes |
@@ -47,4 +49,6 @@ The system holds two registers at once: **magenta + bold type for swagger** (cel
 
 ## Standard sign-off (emails, reports, workbook)
 > With you every box — and every reveal —
-> Marie & Honey — The Honey Method
+> Marie & Honey
+
+(The business name already appears in the header/cover of every document — no need to repeat "Honey!" right next to "Marie & Honey" in the sign-off, since the daughter's name and the brand name are now the same word.)

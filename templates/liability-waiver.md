@@ -8,7 +8,7 @@ on it. Get it signed before every first visit — see SOP 1, step 5.
 
 **Client:** [Name]
 **Date:** [Date]
-**Business:** The Honey Method ("we," "us")
+**Business:** Honey! ("we," "us")
 
 ## 1. Services
 We agree to provide home organizing services as described in the accompanying quote, on the date(s) agreed.
@@ -24,7 +24,7 @@ Photos are always taken for your reports and workbook (`templates/initial-state-
 
 ☐ **Private only.** These photos are never shown to anyone outside our work together — not other clients, not the internet.
 ☐ **Private + anonymized referral show-and-tell.** We may show an anonymized before/after (no name, no address, no identifying details) in person or in a quote to a prospective client — never posted publicly online.
-☐ **Public marketing okay.** These photos may also be used in The Honey Method's portfolio, website, or social media (first names/identifying details omitted unless you say otherwise).
+☐ **Public marketing okay.** These photos may also be used in Honey!'s portfolio, website, or social media (first names/identifying details omitted unless you say otherwise).
 
 ## 5. Payment
 Payment is due [on completion of each visit / per the agreed schedule]. Cancellations within [X days] of a scheduled visit forfeit the deposit / incur a [fee].

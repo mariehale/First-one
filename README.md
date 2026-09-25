@@ -1,6 +1,6 @@
-# The Honey Method
+# Honey!
 
-**Clutter, Meet Your Match.**
+**Organization for the Overwhelmed.**
 
 A mother-daughter team that organizes homes, sells what clients don't need, and reads their clutter with love until they're ready to let it go. Playful, fierce, warm — the full voice system and tagline hierarchy is in `BRAND.md`. This repo is the operating manual: every step-by-step process, every AI prompt, every template, and every tracker the business runs on.
 

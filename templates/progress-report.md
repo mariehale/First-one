@@ -26,5 +26,5 @@ Remaining: [list of spaces not yet done]
 [Specific compliment]
 
 ---
-With you every box at a time,
-Marie & Honey — The Honey Method
+With you every box — and every reveal —
+Marie & Honey

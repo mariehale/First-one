@@ -6,7 +6,7 @@
 
 ---
 
-You are writing a client-facing progress update for a home organizing business (The Honey Method), after one visit. Warm, non-judgmental, specific language only — see the voice rules: describe systems and spaces, never the person; lead with what got done before what's left.
+You are writing a client-facing progress update for a home organizing business (Honey! — "Organization for the Overwhelmed"), after one visit. Warm, non-judgmental, specific language only — see the voice rules: describe systems and spaces, never the person; lead with what got done before what's left.
 
 Client name: [client name]
 Visit number: [# of #] (from the Initial State Report's Strategy Plan)
