@@ -37,4 +37,11 @@ Reference only — not needed for the UI work in `build-sheet.md`. Used for API 
 `lead-new` `intake-sent` `quoted` `waiver-signed` `in-progress` `final-visit-sent` `payout-pending` `referral-asked` `past-client` `marketplace-buyer`
 
 ## Calendars
-Not yet created — see build-sheet.md §5 (blocked on a user ID for the `teamMembers` field, or build directly in the UI).
+Created via API as `event`-type calendars, which don't require a `teamMembers` user ID (unlike personal/round-robin types).
+
+| Calendar | ID | Slug |
+|---|---|---|
+| Free Discovery Walkthrough | `OUJXmLMGkyNQEOrThITU` | `free-discovery-walkthrough` |
+| Organizing Session | `ToHoo5Kb2TobM24tfAcJ` | `organizing-session` |
+
+Find each calendar's public booking link under **Calendars → [calendar name] → Widget/Share** in the GHL UI — the exact URL depends on your account's domain setup, so grab it there rather than guessing it here.

@@ -12,7 +12,7 @@ This runs the business's CRM/booking/automation layer in GoHighLevel, built to t
 - [x] Pipeline exists — came pre-loaded with 11 stages from the agency snapshot, mapped onto the Honey Method journey (`build-sheet.md` §2 has both the AI-generate prompt and the faster rename-only path)
 - [x] Custom fields — all 7 created via API
 - [x] Tags — all 10 created via API
-- [ ] Calendars — blocked: the API can't look up a user ID for this sub-account. Either send me your GHL user ID (Settings → My Staff) or build the two calendars yourself from `build-sheet.md` §5 (~2 min each)
+- [x] Calendars — both created via API as `event`-type calendars (no user ID needed after all). One manual touch-up: reminder notifications need to be toggled on in the GHL UI, see `build-sheet.md` §5
 - [ ] Forms built from `build-sheet.md`
 - [ ] Workflows — paste the 8 prompts in `build-sheet.md` §7 into GHL's Workflow AI
 - [ ] Microsite built from `microsite-copy.md`
@@ -24,8 +24,8 @@ But those AI builders are sitting right there in your GHL UI, and they take a pl
 
 What the API **can** do directly, no UI needed:
 - Create custom fields, custom values, and tags — done
-- Create calendars (booking pages) — blocked only on a user ID, see Status above
+- Create calendars (booking pages) — done
 - Create/update contacts and opportunities, once a pipeline exists
 - Create appointments
 
-Once the pipeline, forms, and workflows are built (by you, via the AI-generator prompts) and the calendars are sorted, I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.
+**Still on you:** the pipeline (or the faster rename path), the intake form, and the 8 workflows — all via the AI-generator prompts in `build-sheet.md` — plus the microsite from `microsite-copy.md`, and toggling on calendar reminders. Once those are in place, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.

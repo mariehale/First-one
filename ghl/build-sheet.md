@@ -46,23 +46,19 @@ These mirror `tracker/clients.csv` exactly — once GHL is live, GHL becomes the
 
 ---
 
-## 5. Calendars — blocked, needs your user ID
+## 5. Calendars — DONE, created via API
 
-GHL's API requires a `teamMembers` entry with a real user ID to create a calendar, and the API connection here can't look up users for this sub-account (returns empty — likely a permissions/scope gap on this specific connection). Two ways to unblock:
-- Go to **Settings → My Staff** in the GHL sub-account, open your own user, and send me the user ID from the URL, or
-- Just build the two calendars below yourself — it's a 2-minute job per calendar in the UI, faster than the back-and-forth to get you the ID.
+Both built as `event`-type calendars (that type doesn't need a `teamMembers` user ID, unlike personal/round-robin types):
 
-**Calendar 1 — Free Discovery Walkthrough**
-- Duration: 20 min (phone) or 30 min (in-home)
-- Buffer: 15 min before/after
-- Confirmation message: *"You're booked! We'll walk the space together, ask what's driving you crazy, and send a quote within 24 hours. No prep needed."*
-- Reminder: 24 hr and 2 hr before
+**Calendar 1 — Free Discovery Walkthrough** (`OUJXmLMGkyNQEOrThITU`)
+- Duration: 30 min, buffer 15 min before/after, bookable 4 hrs–30 days out
+- Confirmation message set: *"You're booked! We'll walk the space together, ask what's driving you crazy, and send a quote within 24 hours. No prep needed."*
 
-**Calendar 2 — Organizing Session**
-- Duration: 3 hr default (matches Room Reset), adjustable per booking for Quick Refresh (2 hr) or Hourly jobs
-- Buffer: 30 min between sessions (travel/reset time)
-- Confirmation message: *"You're on the calendar for [date]! One thing to know: don't tidy up before we arrive — we want to see the space as it really lives."*
-- Reminder: 48 hr and 24 hr before
+**Calendar 2 — Organizing Session** (`ToHoo5Kb2TobM24tfAcJ`)
+- Duration: 3 hrs, buffer 30 min, bookable 24 hrs–60 days out
+- Confirmation message set: *"You're on the calendar! One thing to know: don't tidy up before we arrive — we want to see the space as it really lives."*
+
+**One manual touch-up needed:** reminder notifications (24hr/2hr before for the walkthrough, 48hr/24hr before for the session) hit a server error via API, likely because GHL wants an existing notification template ID I don't have. Quickest fix: open each calendar in GHL → **Notifications** tab → toggle on the default reminder emails/texts and set the timing. Takes under a minute per calendar.
 
 ---
 
