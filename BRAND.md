@@ -1,8 +1,6 @@
 # Brand Sheet
 
-Everything in this repo (reports, workbooks, listings, emails) uses this so it all feels like one business, not scattered documents.
-
-**Placeholder notice:** the name below is a placeholder so we had something to build with. Swap it everywhere with find/replace once you two pick a real one. Other names already on the table: *Honey & Hale Home*, *Sweet Spaces*, *The Honey Method*.
+Everything in this repo (reports, workbooks, listings, emails, the GHL setup, the microsite) uses this so it all feels like one business, not scattered documents. Name and identity are confirmed — not a placeholder.
 
 ## Identity
 - **Business name:** The Honey Method

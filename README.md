@@ -1,7 +1,5 @@
 # The Honey Method
 
-*(Placeholder name — see `BRAND.md`.)*
-
 **No shame. Just space.**
 
 A mother-daughter team that organizes homes, sells what clients don't need, and helps them let go of the guilt around how it got that way. This repo is the operating manual: every step-by-step process, every AI prompt, every template, and every tracker the business runs on.
@@ -18,6 +16,7 @@ A mother-daughter team that organizes homes, sells what clients don't need, and 
 | Fill in a report, quote, listing, waiver, or the workbook | `templates/` |
 | Log a client, a visit, a sale, or an expense | `tracker/` |
 | Brand voice, colors, name | `BRAND.md` |
+| Set up the CRM, booking, automations, and microsite | `ghl/` |
 
 ## Who does what
 | | Marie | Honey |
@@ -44,6 +43,8 @@ A mother-daughter team that organizes homes, sells what clients don't need, and 
 9. **Things we almost forgot** (`sop/09`) — insurance, waivers, minor-labor rules, taxes, backups, reviews, recurring revenue.
 10. **Coaching language guide** (`sop/10`) — the shame-aware scripts behind every client-facing word.
 
+Once the GHL setup in `ghl/` is live, it becomes the real CRM — the pipeline stages there track this same journey, and `tracker/clients.csv`/`sessions.csv` become a backup export rather than the primary log.
+
 ## Pricing (starter — raise after ~5 jobs)
 | Package | What's included | Price |
 |---|---|---|
@@ -67,7 +68,7 @@ Same pipeline as client Sell-It-For-You items (`sop/07`), tracked in `tracker/in
 **Week 1**
 - [ ] Fill in the money split above
 - [ ] Buy the supply kit (label maker, clear bins, drawer dividers, trash bags, 4 labeled Keep/Sell/Donate/Toss bins, cleaning supplies, measuring tape)
-- [ ] Pick a real business name and swap it into `BRAND.md` and this README
+- [ ] Create the GHL sub-account and build it from `ghl/build-sheet.md` and `ghl/microsite-copy.md`
 - [ ] Get liability insurance quotes (`sop/09`)
 - [ ] Organize one space in our own house using the full SOP flow, start to finish, as a dry run
 
@@ -93,4 +94,5 @@ sop/                   the step-by-step manual, 01-10, read in order once
 prompts/               copy-paste AI prompts for reports, workbook copy, and marketplace
 templates/             fill-in-the-blank docs: quotes, reports, workbook, waiver, listings
 tracker/               clients.csv, sessions.csv, sales.csv, expenses.csv, inventory.csv, marketplace-items.csv
+ghl/                   CRM/booking/automation build sheet + microsite copy for GoHighLevel
 ```
