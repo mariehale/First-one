@@ -11,12 +11,13 @@ This is the branded, client-facing deliverable — it's what makes clients feel 
 6. Save a copy to `/Clients/<name>/<date>/Workbook.pdf` in Drive.
 
 ## What's inside the workbook (see `templates/workbook.html`)
-- Cover page with client name, visit number, date
-- "What We Accomplished Today" — before/after photos side by side
+- Cover page with client name, visit number, date, and the hero tagline ("Clutter, Meet Your Match.")
+- "What We Accomplished Today" — before photo alongside **The Reveal** (the after photo, styled in the magenta spotlight accent — see `BRAND.md`)
 - "Your New System" — plain-language instructions for keeping the new setup working
 - "Habit of the Week" — one small, specific coaching challenge (see `sop/10-coaching-language-guide.md` for how to write these — they're about letting go, not just tidying)
 - Progress bar — % of the whole home reset complete
-- "A Note From Your Organizer" — one genuine, specific compliment
+- "A Note From Your Organizer" — one genuine, specific compliment, delivered with a little flourish
+- **House of Honey banner** — only include this block when the client referred someone new this visit; delete it otherwise
 - "Next Visit" — date and what's planned
 
 Once you like the design, this is also the piece worth upgrading in Canva for a more polished/printable look — the HTML version is the functional starting point.

@@ -7,6 +7,7 @@
   @page { size: letter; margin: 0.5in; }
   :root {
     --honey: #D98E2B;
+    --spotlight: #D6408F;
     --blush: #F2C6C2;
     --cream: #FDF8F0;
     --ink: #3A322C;
@@ -34,7 +35,7 @@
   }
   .cover {
     text-align: center;
-    padding-top: 25%;
+    padding-top: 22%;
   }
   .cover .brand {
     letter-spacing: 3px;
@@ -44,6 +45,11 @@
     margin-bottom: 10px;
   }
   .cover h1 { font-size: 42px; margin-bottom: 6px; }
+  .cover .hero-line {
+    font-size: 15px; font-weight: bold; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--spotlight);
+    margin-bottom: 14px;
+  }
   .cover .subtitle { font-size: 18px; font-style: italic; color: var(--ink); }
   .cover .meta { margin-top: 40px; font-size: 14px; color: var(--ink); }
   .section {
@@ -57,6 +63,18 @@
     font-size: 20px;
     border-bottom: 2px solid var(--blush);
     padding-bottom: 8px;
+  }
+  .reveal-section {
+    border: 2px solid var(--spotlight);
+  }
+  .reveal-section h2 {
+    color: var(--spotlight);
+    border-bottom-color: var(--spotlight);
+  }
+  .reveal-drumroll {
+    font-size: 12px; font-weight: bold; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--spotlight);
+    text-align: center; margin-bottom: 10px;
   }
   .photo-row {
     display: flex;
@@ -74,12 +92,19 @@
     border-radius: 12px;
     border: 3px solid var(--honey);
   }
+  .photo-slot.reveal img {
+    border-color: var(--spotlight);
+  }
   .photo-slot .label {
     margin-top: 6px;
     font-size: 12px;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--sage);
+  }
+  .photo-slot.reveal .label {
+    color: var(--spotlight);
+    font-weight: bold;
   }
   ol { padding-left: 20px; }
   .progress-wrap {
@@ -116,6 +141,16 @@
     font-style: italic;
     text-align: center;
   }
+  .house-banner {
+    background: var(--spotlight);
+    color: white;
+    border-radius: 16px;
+    padding: 18px 24px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+  }
   .signoff {
     text-align: center;
     margin-top: 30px;
@@ -130,6 +165,7 @@
 <div class="page cover">
   <div class="brand">The Honey Method</div>
   <h1>{{CLIENT_NAME}}'s<br>Home Reset Workbook</h1>
+  <div class="hero-line">Clutter, Meet Your Match.</div>
   <div class="subtitle">{{COVER_SUBTITLE}}</div>
   <div class="meta">Visit {{VISIT_NUMBER}} &middot; {{VISIT_DATE}}</div>
 </div>
@@ -144,9 +180,9 @@
         <img src="{{BEFORE_PHOTO_PATH}}" alt="Before">
         <div class="label">Before</div>
       </div>
-      <div class="photo-slot">
-        <img src="{{AFTER_PHOTO_PATH}}" alt="After">
-        <div class="label">After</div>
+      <div class="photo-slot reveal">
+        <img src="{{AFTER_PHOTO_PATH}}" alt="The Reveal">
+        <div class="label">The Reveal</div>
       </div>
     </div>
   </div>
@@ -183,13 +219,18 @@
     {{ORGANIZER_NOTE}}
   </div>
 
+  <!-- Only include this banner on a visit where the client referred someone -->
+  <div class="house-banner" style="margin-top:24px;">
+    Welcome to the House of Honey. Thank you for the referral — Honey, you deserve more.
+  </div>
+
   <div class="section" style="margin-top:24px;">
     <h2>Next Visit</h2>
     <p>{{NEXT_VISIT_TEASER}}</p>
   </div>
 
   <div class="signoff">
-    With you every box at a time,<br>
+    With you every box — and every reveal —<br>
     Marie &amp; Honey — The Honey Method
   </div>
 </div>

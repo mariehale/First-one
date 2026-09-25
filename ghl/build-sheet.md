@@ -99,13 +99,13 @@ On submit: add tag `intake-sent` → `lead-new`, move opportunity to **Intake Se
 
 ## 7. Workflows
 
-Write these in GHL's automation builder exactly as specified — trigger, then steps, then the copy. All copy follows the voice rules in `BRAND.md` and `sop/10-coaching-language-guide.md`: warm, specific, never shame-based.
+Write these in GHL's automation builder exactly as specified — trigger, then steps, then the copy. All copy follows the voice rules in `BRAND.md` and `sop/10-coaching-language-guide.md`: warm, specific, never shame-based. Per `BRAND.md` rule 5, these transactional messages keep the taglines but dial back the deeper slang (Reveal, House of Honey, etc. stay for the workbook and site, where the audience has already opted in) — clear beats clever when it's a booking reminder.
 
 ### A. New Lead Welcome
 **Trigger:** Intake form submitted
 **Steps:**
 1. Send email/SMS immediately:
-   > "Thanks for reaching out to The Honey Method! We got your form and we're excited to help. We'll be in touch within 24 hours to set up a free walkthrough — no prep needed."
+   > "Honey! No shame — we've got you. Thanks for reaching out to The Honey Method. We got your form and we're excited to help. We'll be in touch within 24 hours to open the library and set up your free walkthrough — no prep needed."
 2. Internal task for Marie: "Review intake form for [Contact Name], schedule walkthrough"
 
 ### B. Walkthrough Reminder
@@ -117,7 +117,7 @@ Write these in GHL's automation builder exactly as specified — trigger, then s
 **Steps:**
 1. Wait 3 days
 2. If still no booking, send:
-   > "Just checking in — any questions about the plan we sent over? Happy to adjust the package or timeline to fit what works for you."
+   > "Just checking in, Honey — any questions about the plan we sent over? Happy to adjust the package or timeline to fit what works for you."
 
 ### D. Session Reminder
 **Trigger:** Appointment booked on Organizing Session calendar
@@ -128,7 +128,7 @@ Write these in GHL's automation builder exactly as specified — trigger, then s
 **Steps:**
 1. Wait 4 days (let the workbook land and the feeling settle in first)
 2. Send:
-   > "It's been so good working in your space with you. If you know anyone else who could use a hand — a friend, a family member, anyone — we'd love an introduction. Refer someone and you both get $20 off your next visit."
+   > "Honey, you deserve more — and so does anyone you know who's drowning in their own clutter. If a friend, a family member, or anyone comes to mind, we'd love an introduction. Refer someone and you both get $20 off, plus a spot in the House of Honey."
 3. Add tag `referral-asked`, move opportunity to **Won — Referral Asked**
 
 ### F. Sell-It-For-You Payout Reminder (internal only, not client-facing)
@@ -141,7 +141,7 @@ Write these in GHL's automation builder exactly as specified — trigger, then s
 **Trigger:** 60 days after opportunity marked **Won**
 **Steps:**
 1. Send:
-   > "It's been about two months since we finished your reset — how's the system holding up? We offer a quick maintenance visit (1–2 hrs) to reset anything that's drifted. Want to grab a spot?"
+   > "It's been about two months since your reset — how's the system holding up, Honey? We offer a quick maintenance visit (1–2 hrs) to reset anything that's drifted. Want to grab a spot?"
 
 ### H. Internal Workbook Reminder
 **Trigger:** Any organizing session appointment marked completed
@@ -150,9 +150,10 @@ Write these in GHL's automation builder exactly as specified — trigger, then s
 
 ---
 
-## 8. Once this is built
-Tell me the sub-account is set up and I will, via API:
-- Confirm the pipeline stages exist as expected
-- Create the custom fields and tags (or verify yours match this sheet)
-- Create the two calendars
-- Start logging real clients as contacts/opportunities instead of `tracker/clients.csv` rows
+## 8. Status
+- [x] Custom fields and tags — created via API, see `ghl/live-ids.md`
+- [x] Pipeline — exists (renamed from the agency's default snapshot), see §2 above for the rename table
+- [ ] Calendars — blocked on a user ID, see §5
+- [ ] Forms, workflows, microsite — still to build from this sheet and `microsite-copy.md`
+
+Once forms/workflows/site are built, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.

@@ -1,10 +1,10 @@
 # The Honey Method
 
-**No shame. Just space.**
+**Clutter, Meet Your Match.**
 
-A mother-daughter team that organizes homes, sells what clients don't need, and helps them let go of the guilt around how it got that way. This repo is the operating manual: every step-by-step process, every AI prompt, every template, and every tracker the business runs on.
+A mother-daughter team that organizes homes, sells what clients don't need, and reads their clutter with love until they're ready to let it go. Playful, fierce, warm — the full voice system and tagline hierarchy is in `BRAND.md`. This repo is the operating manual: every step-by-step process, every AI prompt, every template, and every tracker the business runs on.
 
-**This is a small, referral-only side hustle by default.** Client photos are private (see `templates/liability-waiver.md` for the exact consent tiers) — we're not running public marketing to grow this. Referrals are the primary growth engine (see `sop/09`, section 7); public posting is kept in the repo only as an optional fallback, not the plan.
+**This is a small, referral-only side hustle by default.** Client photos are private (see `templates/liability-waiver.md` for the exact consent tiers) — we're not running public marketing to grow this. Referrals are the primary growth engine, built around **The House of Honey** (see `sop/09`, section 7); public posting is kept in the repo only as an optional fallback, not the plan.
 
 **Why "AI-compatible" matters here:** every job produces the same predictable outputs — an Initial State Report, a Progress Report per visit, and a branded Coaching Workbook per visit — generated the same way every time by pasting photos into Claude with the prompts in `prompts/`. Same process every time is also exactly what makes this work for Honey: nothing is improvised, every job follows the same numbered steps.
 
