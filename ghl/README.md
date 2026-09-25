@@ -9,12 +9,12 @@ This runs the business's CRM/booking/automation layer in GoHighLevel, built to t
 
 ## Status
 - [x] Sub-account live (`2Q37DK8iQ4ORYHL95ElX`) — [ ] still displays as "The Honey Method" in GHL; rename it to **Honey!** in Settings → Business Profile (no API for this, see below)
-- [x] Pipeline exists — came pre-loaded with 11 stages from the agency snapshot, mapped onto the Honey! journey (`build-sheet.md` §2 has both the AI-generate prompt and the faster rename-only path)
+- [x] Pipeline exists — came pre-loaded with 11 stages from the agency snapshot; 8 map onto the Honey! journey with a rename, the other 3 (Lost Bid, Review Requested, Review Received) get deleted since GHL's native Won/Lost/Abandoned statuses and Workflow I (review nudges) cover them instead — see `build-sheet.md` §2
 - [x] Custom fields — all 7 created via API
-- [x] Tags — all 10 created via API
+- [x] Tags — all 11 created via API (includes `review-received`, added for the review-nudge workflow)
 - [x] Calendars — both created via API as `event`-type calendars (no user ID needed after all). One manual touch-up: reminder notifications need to be toggled on in the GHL UI, see `build-sheet.md` §5
 - [ ] Forms built from `build-sheet.md`
-- [ ] Workflows — paste the 8 prompts in `build-sheet.md` §7 into GHL's Workflow AI
+- [ ] Workflows — paste the 9 prompts in `build-sheet.md` §7 into GHL's Workflow AI (includes Workflow I: two review-request nudges, then an internal alert at 2 weeks if no review)
 - [ ] Microsite built from `microsite-copy.md`
 
 ## Why AI-generator prompts, not manual steps
@@ -28,4 +28,4 @@ What the API **can** do directly, no UI needed:
 - Create/update contacts and opportunities, once a pipeline exists
 - Create appointments
 
-**Still on you:** the pipeline (or the faster rename path), the intake form, and the 8 workflows — all via the AI-generator prompts in `build-sheet.md` — plus the microsite from `microsite-copy.md`, and toggling on calendar reminders. Once those are in place, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.
+**Still on you:** the pipeline (or the faster rename path), the intake form, and the 9 workflows — all via the AI-generator prompts in `build-sheet.md` — plus the microsite from `microsite-copy.md`, and toggling on calendar reminders. Once those are in place, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.

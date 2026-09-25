@@ -15,12 +15,12 @@ Reference only — not needed for the UI work in `build-sheet.md`. Used for API 
 | Walkthrough Booked | `c2b01161-801d-4a91-aca6-581583ce9128` |
 | Quoted | `28fabef2-229f-4c11-8f40-9b663013d4e4` |
 | Booked (Waiver Signed) | `01c68069-a52e-420a-86a3-402c2944d3c5` |
-| Lost | `d146aa5b-4775-4530-82ef-5ef6baacd5ec` |
 | In Progress | `b0033649-0f05-4f91-8e0a-3f85d51e528a` |
 | Final Visit / Payout Pending | `fc6627d5-228e-467f-bec6-bed94357462a` |
-| Won — Referral Asked | `2780a017-901c-4376-bcae-71c061e8a1d7` |
+| Referral Asked | `2780a017-901c-4376-bcae-71c061e8a1d7` |
 | Review Requested | `02f6d3a8-dc95-44df-a722-e8abacde0bab` |
-| Past Client | `bc0d73ec-f7bd-42ac-9c2d-9feb2e5b5632` |
+
+**Deleted, not renamed** (native Won/Lost status covers these — see `build-sheet.md` §2): the old "Lost Bid" (`d146aa5b-4775-4530-82ef-5ef6baacd5ec`) and "Review Received" (`bc0d73ec-f7bd-42ac-9c2d-9feb2e5b5632`) stages.
 
 ## Custom fields (contact-level)
 | Field | Field key | ID |
@@ -34,7 +34,7 @@ Reference only — not needed for the UI work in `build-sheet.md`. Used for API 
 | Sell-It-For-You Opt-In | `contact.sellitforyou_optin` | `bf2Y6N2ZS1eJHomLfylB` |
 
 ## Tags
-`lead-new` `intake-sent` `quoted` `waiver-signed` `in-progress` `final-visit-sent` `payout-pending` `referral-asked` `past-client` `marketplace-buyer`
+`lead-new` `intake-sent` `quoted` `waiver-signed` `in-progress` `final-visit-sent` `payout-pending` `referral-asked` `past-client` `marketplace-buyer` `review-received`
 
 ## Calendars
 Created via API as `event`-type calendars, which don't require a `teamMembers` user ID (unlike personal/round-robin types).
