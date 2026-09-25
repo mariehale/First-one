@@ -4,33 +4,37 @@ Build these in order. Each section is a literal paste-in — the goal is zero de
 
 ---
 
-## 1. Sub-account settings
-- **Name:** The Honey Method
-- **Business category:** Home Services / Organizing
-- **Timezone:** (your local timezone)
-- **Business phone/email:** (the number/email you want clients to see)
+## 1. Sub-account settings — DONE
+- **Name:** The Honey Method ✅ (sub-account is live: `2Q37DK8iQ4ORYHL95ElX`)
+- **Timezone:** America/Chicago (already set)
+- **Business phone/email:** 708-486-0921 / marie@atrevenue.com (already set)
 
 ---
 
-## 2. Pipeline
+## 2. Pipeline — rename existing stages, don't build a new one
 
-**Pipeline name:** Home Reset Pipeline
+The sub-account came pre-loaded (from the agency's default snapshot) with an 11-stage **"Marketing Pipeline"** that maps cleanly onto the Honey Method journey — richer than the original 8-stage plan, actually, since it splits "asked for a referral" from "asked for a review." No new pipeline needed. In GHL: **Settings → Pipelines → Marketing Pipeline**, rename the pipeline itself and each stage per this table:
 
-**Stages, in order:**
-1. **New Lead** — a referral just reached out
-2. **Intake Sent** — intake form sent, waiting on it back
-3. **Quoted** — walkthrough done, quote sent
-4. **Booked** — waiver signed, visit(s) scheduled
-5. **In Progress** — job underway (multi-visit jobs stay here across all their visits)
-6. **Final Visit / Payout Pending** — last visit done; if a Sell-It-For-You payout is owed, it's tracked here until paid
-7. **Won — Referral Asked** — job complete, referral ask sent
-8. **Lost** — didn't book, or job fell through
+| # | Current name | Rename to |
+|---|---|---|
+| 1 | Marketing Pipeline *(pipeline name)* | **Home Reset Pipeline** |
+| 2 | New Lead | New Lead *(keep)* |
+| 3 | Contacted | Intake Sent |
+| 4 | Qualified | Walkthrough Booked |
+| 5 | Estimate Sent | Quoted |
+| 6 | Won Bid – Booked Job | Booked (Waiver Signed) |
+| 7 | Lost Bid | Lost |
+| 8 | Job Completed | In Progress |
+| 9 | Payment Complete | Final Visit / Payout Pending |
+| 10 | Follow-Up | Won — Referral Asked |
+| 11 | Review Requested | Review Requested *(keep)* |
+| 12 | Review Received | Past Client |
 
-Each opportunity in this pipeline = one client engagement (matches one row in `tracker/clients.csv`).
+Each opportunity in this pipeline = one client engagement (matches one row in `tracker/clients.csv`). Exact pipeline/stage IDs are recorded in `ghl/live-ids.md` for API reference — you don't need them for the UI rename.
 
 ---
 
-## 3. Custom fields (contact-level)
+## 3. Custom fields (contact-level) — DONE, created via API
 
 | Field name | Type | Options / notes |
 |---|---|---|
@@ -46,12 +50,18 @@ These mirror `tracker/clients.csv` exactly — once GHL is live, GHL becomes the
 
 ---
 
-## 4. Tags
+## 4. Tags — DONE, created via API
 `lead-new` · `intake-sent` · `quoted` · `waiver-signed` · `in-progress` · `final-visit-sent` · `payout-pending` · `referral-asked` · `past-client` · `marketplace-buyer`
+
+(Two tags came pre-loaded with the snapshot — `follow-up` and `warm lead` — left alone since they don't conflict; ignore or delete them later if they're never used.)
 
 ---
 
-## 5. Calendars
+## 5. Calendars — blocked, needs your user ID
+
+GHL's API requires a `teamMembers` entry with a real user ID to create a calendar, and the API connection here can't look up users for this sub-account (returns empty — likely a permissions/scope gap on this specific connection). Two ways to unblock:
+- Go to **Settings → My Staff** in the GHL sub-account, open your own user, and send me the user ID from the URL, or
+- Just build the two calendars below yourself — it's a 2-minute job per calendar in the UI, faster than the back-and-forth to get you the ID.
 
 **Calendar 1 — Free Discovery Walkthrough**
 - Duration: 20 min (phone) or 30 min (in-home)

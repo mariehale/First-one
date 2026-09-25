@@ -5,12 +5,14 @@ This runs the business's CRM/booking/automation layer in GoHighLevel, built to t
 ## What's here
 - **`build-sheet.md`** — the exact spec to build in GHL: pipeline stages, custom fields, tags, calendars, forms, and every automation workflow (trigger + copy). Most of this has to be built by hand in GHL's UI — see "Why not automated?" below — so this doc is written to be pasted straight in, section by section.
 - **`microsite-copy.md`** — the site content, section by section, matching the design mockup: **https://claude.ai/artifact/HsUr1YzFYwB7BFtJJKTvV5**
+- **`live-ids.md`** — the real location/pipeline/field/tag IDs from the live sub-account, for API reference.
 
 ## Status
-- [ ] New GHL sub-account created (name/ID: `__________`) — once you have this, tell me and I'll run the API-buildable setup below.
-- [ ] Pipeline built from `build-sheet.md`
-- [ ] Custom fields built (I can do this via API once the sub-account exists)
-- [ ] Calendars built (I can do this via API)
+- [x] Sub-account live: **The Honey Method** (`2Q37DK8iQ4ORYHL95ElX`)
+- [x] Pipeline exists — came pre-loaded with 11 stages from the agency snapshot, mapped onto the Honey Method journey with renames only (`build-sheet.md` §2). **You still need to do the renames in the UI.**
+- [x] Custom fields — all 7 created via API
+- [x] Tags — all 10 created via API
+- [ ] Calendars — blocked: the API can't look up a user ID for this sub-account. Either send me your GHL user ID (Settings → My Staff) or build the two calendars yourself from `build-sheet.md` §5 (~2 min each)
 - [ ] Forms built from `build-sheet.md`
 - [ ] Workflows built from `build-sheet.md`
 - [ ] Microsite built from `microsite-copy.md`
