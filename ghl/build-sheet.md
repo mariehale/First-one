@@ -116,7 +116,7 @@ Each workflow below is written as one paste-ready paragraph for GHL's **Automati
 ### A. New Lead Welcome (build this last, after §6)
 > When a contact submits the intake form, add the tags lead-new and intake-sent, move their opportunity in the Home Reset Pipeline to the Intake Sent stage, and immediately send them this message by both email and SMS: "Honey! No shame — we've got you. Thanks for reaching out to Honey!. We got your form and we're excited to help. We'll be in touch within 24 hours to open the library and set up your free walkthrough — no prep needed." Then create a task for Marie: "Review intake form for [contact name], schedule walkthrough."
 
-### B. Walkthrough Reminder
+### B. Walkthrough Reminder — DONE, built and published
 > When an appointment is booked on the Free Discovery Walkthrough calendar, send this confirmation immediately: "You're booked! We'll walk the space together, ask what's driving you crazy, and send a quote within 24 hours. No prep needed." Then send a reminder 24 hours before the appointment, and another reminder 2 hours before.
 
 ### C. Quote Follow-Up
