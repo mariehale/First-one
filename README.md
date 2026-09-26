@@ -54,6 +54,8 @@ Once the GHL setup in `ghl/` is live, it becomes the real CRM — the pipeline s
 | **Hourly** | Bigger/unusual jobs, 2 people, 3-hr minimum | $60/hr for the team |
 | **Sell-It-For-You add-on** | We photograph, list, and sell the client's items | We keep 30%, client keeps 70% |
 
+**We charge at booking, not at the end.** Flat packages are paid in full to book; hourly projects pay the 3-hour minimum ($180) to book, then get invoiced after each visit. Booking is also when the sale counts as **Won** in GHL — the sales cycle ends when they book, even if the project runs for months.
+
 Supplies (bins, labels, baskets) billed at cost, or the client buys from a list sent ahead of time.
 
 ## Marketplace reselling — our own inventory

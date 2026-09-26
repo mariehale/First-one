@@ -40,7 +40,7 @@ This is a small, referral-only side hustle — no public advertising by default 
 Offer a **maintenance visit** (monthly or quarterly, 1–2 hrs, keeping the system going) as an upsell in the final workbook of every full organize. This is usually easier margin than a new full job.
 
 ## 9. Cancellation / no-show policy
-Decide this now and put it in the quote template: e.g., a deposit that's forfeited on a same-week cancellation. Not having a policy is how a business absorbs other people's schedule changes for free.
+Decided and in `templates/client-quote.md`: payment is collected at booking, 72+ hours' notice moves it to a new date, same-week cancellations forfeit it. Not having a policy is how a business absorbs other people's schedule changes for free.
 
 ## 10. Honey's comfort and structure needs
 - Every job uses the same photo protocol, same 4-pile system, same break timer, same visit wrap-up — sameness is a feature here, not a limitation. Don't improvise the process even when a job feels "simple."

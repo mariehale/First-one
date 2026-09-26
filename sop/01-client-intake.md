@@ -11,7 +11,8 @@ Do these steps in order, every time. Same order, every client — that consisten
    - Ask: "What's driving you crazy the most?" and "What's your goal — just usable, or magazine-tidy?"
    - Take rough "before" phone photos (not the full protocol yet — that's step 5, once they're a booked client).
 4. **Send the quote** using `templates/client-quote.md`. Include the package, price, estimated visit count (rough, until the AI assessment sharpens it), and a supply list if they're buying bins.
-5. **Get the paperwork signed before the first real visit:** `templates/liability-waiver.md` (liability + photo release combined). Do not start work without this signed — see `sop/09-things-we-almost-forgot.md` for why.
+5. **Close the sale: waiver signed + booking invoice sent.** This is the moment the opportunity is marked **Won** in GHL (Workflow K does it automatically) — not the last visit. Flat packages pay in full to book; hourly projects pay the 3-hour minimum to book and get invoiced after each visit. Payment reminders are automatic.
+   **Paperwork before the first real visit:** `templates/liability-waiver.md` (liability + photo release combined). Do not start work without this signed — see `sop/09-things-we-almost-forgot.md` for why.
 6. **Book the date(s)** and send a pre-visit prep email:
    > "Nothing to do to prepare — just don't tidy up! We want to see the space as it really lives day to day."
 7. **Log the client** in `tracker/clients.csv` the moment they're booked, not after the first visit.
