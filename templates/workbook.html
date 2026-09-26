@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>{{CLIENT_NAME}} — Home Reset Workbook</title>
+<style>
+  @page { size: letter; margin: 0.5in; }
+  :root {
+    --honey: #D98E2B;
+    --spotlight: #D6408F;
+    --blush: #F2C6C2;
+    --cream: #FDF8F0;
+    --ink: #3A322C;
+    --sage: #8FA98E;
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: var(--cream);
+    color: var(--ink);
+    margin: 0;
+    padding: 0;
+  }
+  .page {
+    max-width: 7.5in;
+    margin: 0 auto;
+    padding: 40px 30px;
+    page-break-after: always;
+  }
+  .page:last-child { page-break-after: auto; }
+  h1, h2 {
+    font-family: 'Georgia', serif;
+    color: var(--honey);
+    margin-top: 0;
+  }
+  .cover {
+    text-align: center;
+    padding-top: 22%;
+  }
+  .cover .brand {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--sage);
+    margin-bottom: 10px;
+  }
+  .cover h1 { font-size: 42px; margin-bottom: 6px; }
+  .cover .hero-line {
+    font-size: 15px; font-weight: bold; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--spotlight);
+    margin-bottom: 14px;
+  }
+  .cover .subtitle { font-size: 18px; font-style: italic; color: var(--ink); }
+  .cover .meta { margin-top: 40px; font-size: 14px; color: var(--ink); }
+  .section {
+    background: white;
+    border: 2px solid var(--blush);
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 24px;
+  }
+  .section h2 {
+    font-size: 20px;
+    border-bottom: 2px solid var(--blush);
+    padding-bottom: 8px;
+  }
+  .reveal-section {
+    border: 2px solid var(--spotlight);
+  }
+  .reveal-section h2 {
+    color: var(--spotlight);
+    border-bottom-color: var(--spotlight);
+  }
+  .reveal-drumroll {
+    font-size: 12px; font-weight: bold; letter-spacing: 2px;
+    text-transform: uppercase; color: var(--spotlight);
+    text-align: center; margin-bottom: 10px;
+  }
+  .photo-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+  }
+  .photo-slot {
+    flex: 1;
+    text-align: center;
+  }
+  .photo-slot img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 3px solid var(--honey);
+  }
+  .photo-slot.reveal img {
+    border-color: var(--spotlight);
+  }
+  .photo-slot .label {
+    margin-top: 6px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--sage);
+  }
+  .photo-slot.reveal .label {
+    color: var(--spotlight);
+    font-weight: bold;
+  }
+  ol { padding-left: 20px; }
+  .progress-wrap {
+    background: #eee;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 28px;
+    margin: 12px 0;
+  }
+  .progress-bar {
+    background: var(--sage);
+    height: 100%;
+    color: white;
+    text-align: right;
+    padding-right: 10px;
+    line-height: 28px;
+    font-size: 13px;
+    font-weight: bold;
+    width: {{PROGRESS_PERCENT}}%;
+  }
+  .reflection-box {
+    border: 2px dashed var(--honey);
+    border-radius: 12px;
+    padding: 16px;
+    min-height: 80px;
+    margin-top: 10px;
+    font-style: italic;
+    color: #999;
+  }
+  .note {
+    background: var(--blush);
+    border-radius: 16px;
+    padding: 24px;
+    font-style: italic;
+    text-align: center;
+  }
+  .house-banner {
+    background: var(--spotlight);
+    color: white;
+    border-radius: 16px;
+    padding: 18px 24px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    margin-bottom: 24px;
+  }
+  .signoff {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: var(--honey);
+  }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<div class="page cover">
+  <div class="brand">Honey!</div>
+  <h1>{{CLIENT_NAME}}'s<br>Home Reset Workbook</h1>
+  <div class="hero-line">Organization for the Overwhelmed.</div>
+  <div class="subtitle">{{COVER_SUBTITLE}}</div>
+  <div class="meta">Visit {{VISIT_NUMBER}} &middot; {{VISIT_DATE}}</div>
+</div>
+
+<!-- TODAY -->
+<div class="page">
+  <div class="section">
+    <h2>What We Accomplished Today</h2>
+    <p>{{ACCOMPLISHED_TODAY}}</p>
+    <div class="photo-row">
+      <div class="photo-slot">
+        <img src="{{BEFORE_PHOTO_PATH}}" alt="Before">
+        <div class="label">Before</div>
+      </div>
+      <div class="photo-slot reveal">
+        <img src="{{AFTER_PHOTO_PATH}}" alt="The Reveal">
+        <div class="label">The Reveal</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Your New System</h2>
+    <div>{{NEW_SYSTEM_INSTRUCTIONS}}</div>
+  </div>
+
+  <div class="section">
+    <h2>Overall Progress</h2>
+    <div class="progress-wrap">
+      <div class="progress-bar">{{PROGRESS_PERCENT}}%</div>
+    </div>
+    <p style="font-size:13px;color:var(--sage);">of your home reset is complete</p>
+  </div>
+</div>
+
+<!-- COACHING -->
+<div class="page">
+  <div class="section">
+    <h2>Habit of the Week</h2>
+    <p>{{HABIT_OF_THE_WEEK}}</p>
+  </div>
+
+  <div class="section">
+    <h2>A Little Reflection</h2>
+    <p>{{REFLECTION_PROMPT}}</p>
+    <div class="reflection-box">Write here...</div>
+  </div>
+
+  <div class="note">
+    <strong>A Note From Your Organizer</strong><br><br>
+    {{ORGANIZER_NOTE}}
+  </div>
+
+  <!-- Only include this banner on a visit where the client referred someone -->
+  <div class="house-banner" style="margin-top:24px;">
+    Welcome to the House of Honey. Thank you for the referral — Honey, you deserve more.
+  </div>
+
+  <div class="section" style="margin-top:24px;">
+    <h2>Next Visit</h2>
+    <p>{{NEXT_VISIT_TEASER}}</p>
+  </div>
+
+  <div class="signoff">
+    With you every box — and every reveal —<br>
+    Marie &amp; Honey
+  </div>
+</div>
+
+</body>
+</html>
