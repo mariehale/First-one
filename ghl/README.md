@@ -12,7 +12,7 @@ This runs the business's CRM/booking/automation layer in GoHighLevel, built to t
 - [x] Pipeline — **Home Reset Pipeline** built via GHL's Ask AI, exactly 8 active-journey stages, no Won/Lost/Abandoned or review stages (see `live-ids.md` for IDs). The old pre-loaded "Marketing Pipeline" is unused and safe to delete whenever.
 - [x] Custom fields — all 7 created via API
 - [x] Tags — all 11 created via API (includes `review-received`, added for the review-nudge workflow)
-- [x] Calendars — both created via API as `event`-type calendars (no user ID needed after all). One manual touch-up: reminder notifications need to be toggled on in the GHL UI, see `build-sheet.md` §5
+- [x] Calendars — both created via API as `event`-type calendars (no user ID needed after all). Leave the calendars' own reminder notifications off — Workflows B and D send them, so both would double-text
 - [ ] Tags `safety-cleared` / `safety-declined` — add manually in Settings → Tags (safety check, `sop/11`)
 - [ ] Intake form — **manual only**, confirmed no AI shortcut exists for forms (unlike the pipeline). Build in GHL desktop from `build-sheet.md` §6
 - [ ] Workflows — paste the 11 prompts in `build-sheet.md` §7 into GHL's Workflow AI (Workflow K marks Won at booking, sends the invoice, and auto-reminds on unpaid invoices; Workflow I handles review nudges)
@@ -29,4 +29,4 @@ What the API **can** do directly, no UI needed:
 - Create/update contacts and opportunities, once a pipeline exists
 - Create appointments
 
-**Still on you:** the intake form (manual, desktop, §6), the 11 workflows (Ask AI, build B–I first, then J and K, A last — §7), and the microsite from `microsite-copy.md`, plus toggling on calendar reminders. Once those are in place, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.
+**Still on you:** the intake form (manual, desktop, §6), the 11 workflows (Ask AI, build B–I first, then J and K, A last — §7), and the microsite from `microsite-copy.md`, plus connecting payments (Stripe) for Workflow K's invoices. Once those are in place, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.

@@ -84,7 +84,7 @@ Both built as `event`-type calendars (that type doesn't need a `teamMembers` use
 
 **Business hours (fixed — see the note below):** Mon–Fri 9am–5pm, Sat 9am–1pm, America/Chicago, on both calendars.
 
-**One manual touch-up remaining:** reminder notifications (24hr/2hr before for the walkthrough, 48hr/24hr before for the session) hit a server error via API, likely because GHL wants an existing notification template ID I don't have. Quickest fix: open each calendar in GHL → **Notifications** tab → toggle on the default reminder emails/texts and set the timing. Takes under a minute per calendar.
+**Leave the calendars' built-in reminder notifications OFF.** Workflows B and D already send the confirmation and both reminders for each calendar; turning on the calendar's own reminders too would double-text every client.
 
 **GHL convention (Marie's correction, keep this permanently): "created" isn't "complete."** Both calendars were created via API with empty availability hours, which made them *exist* but not be *real enough* for a workflow trigger to resolve — GHL's Workflow AI generated a trigger referencing the calendar by name, and it still errored "Calendar not found" because the calendar had no business hours set. Before generating a workflow (or anything else) that references another object by name — a calendar, a form, a pipeline stage — confirm that object is fully configured in the GHL UI, not just present in a list somewhere.
 
