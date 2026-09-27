@@ -11,9 +11,8 @@ This runs the business's CRM/booking/automation layer in GoHighLevel, built to t
 - [x] Sub-account live (`2Q37DK8iQ4ORYHL95ElX`) — [ ] still displays as "The Honey Method" in GHL; rename it to **Honey!** in Settings → Business Profile (no API for this, see below)
 - [x] Pipeline — **Home Reset Pipeline** built via GHL's Ask AI, exactly 8 active-journey stages, no Won/Lost/Abandoned or review stages (see `live-ids.md` for IDs). The old pre-loaded "Marketing Pipeline" is unused and safe to delete whenever.
 - [x] Custom fields — all 7 created via API
-- [x] Tags — all 11 created via API (includes `review-received`, added for the review-nudge workflow)
+- [x] Tags — all 13 created via API (includes `review-received` for the review nudges, and `safety-cleared` / `safety-declined` for the safety check in `sop/11`)
 - [x] Calendars — both created via API as `event`-type calendars (no user ID needed after all). Leave the calendars' own reminder notifications off — Workflows B and D send them, so both would double-text
-- [ ] Tags `safety-cleared` / `safety-declined` — add manually in Settings → Tags (safety check, `sop/11`)
 - [ ] Intake form — **manual only**, confirmed no AI shortcut exists for forms (unlike the pipeline). Build in GHL desktop from `build-sheet.md` §6
 - [ ] Workflows — paste the 11 prompts in `build-sheet.md` §7 into GHL's Workflow AI (Workflow K marks Won at booking, sends the invoice, and auto-reminds on unpaid invoices; Workflow I handles review nudges)
 - [ ] Microsite built from `microsite-copy.md`

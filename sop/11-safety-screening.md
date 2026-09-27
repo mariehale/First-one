@@ -49,7 +49,7 @@ At the walkthrough, Marie confirms the person matches the name on the form (a qu
 Already covered in `sop/08` — Honey never messages or meets a buyer, public place or police "safe exchange zone," porch pickup only with Marie home. One addition: before any porch pickup, Marie checks the buyer's Facebook profile (account age, Marketplace ratings). New account + no ratings → public meetup only, no porch pickup.
 
 ## How this lives in GHL
-- **Tags:** `safety-cleared`, `safety-declined` (add manually in Settings → Tags; takes seconds)
+- **Tags:** `safety-cleared`, `safety-declined` (already created in GHL)
 - **Intake form:** "Who referred you?" (required, maps to **Referred By**) and "Will anyone besides you be home during sessions?" — see `ghl/build-sheet.md` §6
 - **Workflow A** creates Marie's "run the safety check" task when the intake form comes in
 - **Workflow J** sends the walkthrough booking link *only* when `safety-cleared` is added — see `ghl/build-sheet.md` §7
