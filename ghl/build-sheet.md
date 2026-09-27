@@ -64,7 +64,7 @@ These mirror `tracker/clients.csv` exactly — once GHL is live, GHL becomes the
 ## 4. Tags — DONE, created via API
 `lead-new` · `intake-sent` · `quoted` · `waiver-signed` · `in-progress` · `final-visit-sent` · `payout-pending` · `referral-asked` · `past-client` · `marketplace-buyer` · `review-received`
 
-**To add manually (Settings → Tags, seconds each):** `safety-cleared` · `safety-declined` — for the safety check in `sop/11-safety-screening.md`. Add these before building Workflows A and J, since both reference them.
+Also created via API: `safety-cleared` · `safety-declined` — for the safety check in `sop/11-safety-screening.md`, used by Workflows A and J.
 
 (Two tags came pre-loaded with the snapshot — `follow-up` and `warm lead` — left alone since they don't conflict; ignore or delete them later if they're never used.)
 
@@ -162,7 +162,7 @@ Why a separate workflow: the walkthrough calendar link is never public (not on t
 - [x] Custom fields and tags — created via API, see `ghl/live-ids.md`
 - [x] Calendars — created via API, see §5
 - [x] Pipeline — built via GHL's Ask AI, exactly 8 stages, no Won/Lost/Abandoned or review stages, see §2
-- [ ] Tags `safety-cleared` and `safety-declined` — add manually, see §4
+- [x] Tags `safety-cleared` and `safety-declined` — created via API, see §4
 - [ ] Forms, workflows, microsite — still to build from this sheet (§6, §7) and `microsite-copy.md`
 
 Once forms/workflows/site are built, tell me and I'll start logging real clients as contacts/opportunities via API instead of `tracker/clients.csv` rows.
