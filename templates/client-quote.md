@@ -13,7 +13,7 @@ Thanks for having us over. Here's what we talked about:
 **Sell-It-For-You (optional):** we'll photograph, list, and sell anything you don't want. You keep 70% of each sale.
 **Donations:** we drop them off the same day.
 
-Payment is due at the end of the job by Venmo, Zelle, or cash.
+**To book:** sign the waiver and pay the invoice we send. Quick Refresh and Room Reset are paid in full to book your date; hourly projects pay the 3-hour minimum to book, and we invoice the remaining hours after each visit. Cancel with 72+ hours' notice and we'll move your payment to a new date; same-week cancellations forfeit the booking payment.
 
 Can't wait!
 Marie & Honey

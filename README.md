@@ -1,137 +1,102 @@
-# Marie & Honey — Side Cash Project
+# Honey!
 
-Two ways to make money, and they feed each other:
+**Organization for the Overwhelmed.**
 
-1. **Home organizing** — we organize closets, pantries, garages, kids' rooms, and playrooms for neighbors.
-2. **Marketplace reselling** — we sell things on Facebook Marketplace: our own stuff first, then things clients want gone.
+A mother-daughter team that organizes homes, sells what clients don't need, and reads their clutter with love until they're ready to let it go. Playful, fierce, warm — the full voice system and tagline hierarchy is in `BRAND.md`. This repo is the operating manual: every step-by-step process, every AI prompt, every template, and every tracker the business runs on.
 
-The pitch: *"We'll organize your space, and we'll sell what you don't want anymore."* Most organizers only haul things to donation. We can turn a client's clutter into cash for them, which is what makes us different.
+**This is a small, referral-only side hustle by default.** Client photos are private (see `templates/liability-waiver.md` for the exact consent tiers) — we're not running public marketing to grow this. Referrals are the primary growth engine, built around **The House of Honey** (see `sop/09`, section 7); public posting is kept in the repo only as an optional fallback, not the plan.
 
----
+**Why "AI-compatible" matters here:** every job produces the same predictable outputs — an Initial State Report, a Progress Report per visit, and a branded Coaching Workbook per visit — generated the same way every time by pasting photos into Claude with the prompts in `prompts/`. Same process every time is also exactly what makes this work for Honey: nothing is improvised, every job follows the same numbered steps.
+
+## Start here
+| If you want to... | Go to |
+|---|---|
+| See the whole client journey, step by step | `sop/` (read `01` through `11` in order, once) |
+| Copy-paste the actual AI prompts | `prompts/` |
+| Fill in a report, quote, listing, waiver, or the workbook | `templates/` |
+| Log a client, a visit, a sale, or an expense | `tracker/` |
+| Brand voice, colors, name | `BRAND.md` |
+| Set up the CRM, booking, automations, and microsite | `ghl/` |
 
 ## Who does what
-
 | | Marie | Honey |
 |---|---|---|
 | Client calls, quotes, scheduling | ✅ | |
 | Hands-on organizing | ✅ | ✅ |
-| Before/after photos | | ✅ |
-| Product photos for listings | | ✅ |
-| Writing listing titles & descriptions | ✅ | ✅ |
+| Before/after & marketplace photos (`sop/02`) | | ✅ |
+| Running the AI prompts & filling templates | ✅ | ✅ |
 | Posting listings & answering buyers | ✅ | |
-| Meeting buyers for pickups | ✅ | with Marie |
-| Tracking money (see `tracker/`) | ✅ | ✅ |
+| Meeting buyers for pickups | ✅ | with Marie only |
+| Tracking money (`tracker/`) | ✅ | ✅ |
 
-**Why Marie posts the listings:** Facebook Marketplace requires sellers to be 18+, so the listings go on Marie's account. Honey should never meet a buyer alone.
+**Why Marie posts listings and handles buyers:** Facebook Marketplace requires 18+, and Honey should never meet or message a buyer alone. Full safety rules: `sop/08-buyer-and-money-management.md`.
 
----
+## The client journey (full detail in `sop/`)
+1. **Intake** (`sop/01`) — first contact through signed waiver and booking.
+2. **Photo capture** (`sop/02`) — the before-photo checklist every job starts with.
+3. **AI Initial Assessment** (`sop/03`) — turns before-photos into the client's Home Reset Plan: room-by-room assessment, time estimate, resale potential, step-by-step strategy.
+4. **Session day** (`sop/04`) — the on-site Keep/Sell/Donate/Toss workflow, every visit.
+5. **Progress Report** (`sop/05`) — a short update after every visit, tracking cumulative % complete against the original plan.
+6. **Coaching Workbook** (`sop/06`) — the branded, cute deliverable sent after every visit (see `templates/workbook.html`).
+7. **Marketplace pipeline** (`sop/07`) — Sell pile → AI sort (sellable/donate/toss) → AI-written listing → posted.
+8. **Buyer & money management** (`sop/08`) — safety rules, message scripts, payouts.
+9. **Things we almost forgot** (`sop/09`) — insurance, waivers, minor-labor rules, taxes, backups, reviews, recurring revenue.
+10. **Coaching language guide** (`sop/10`) — the shame-aware scripts behind every client-facing word.
+11. **Safety screening** (`sop/11`) — Honey's idea: a free 15-minute check on every new client before they get our calendar, plus on-site rules (never alone, check-in text, code word).
 
-## Part 1: Home organizing
+Once the GHL setup in `ghl/` is live, it becomes the real CRM — the pipeline stages there track this same journey, and `tracker/clients.csv`/`sessions.csv` become a backup export rather than the primary log.
 
-### Services & starter prices
-
-These are introductory prices to get our first reviews and before/after photos. Raise them after about 5 jobs.
-
+## Pricing (starter — raise after ~5 jobs)
 | Package | What's included | Price |
 |---|---|---|
-| **Quick Refresh** | One small space (a closet, a pantry, or under a sink), about 2–3 hrs | $150 |
-| **Room Reset** | One full room (bedroom, playroom, or home office), about 4–5 hrs | $275 |
-| **Hourly** | Bigger or unusual jobs, 2 people, 3-hr minimum | $60/hr for the team |
-| **Sell-It-For-You add-on** | We photograph, list, and sell the client's unwanted items | We keep 30% of the sale price, the client keeps 70% |
+| **Quick Refresh** | One small space, ~2–3 hrs | $150 |
+| **Room Reset** | One full room, ~4–5 hrs | $275 |
+| **Hourly** | Bigger/unusual jobs, 2 people, 3-hr minimum | $60/hr for the team |
+| **Sell-It-For-You add-on** | We photograph, list, and sell the client's items | We keep 30%, client keeps 70% |
 
-Supplies (bins, labels, baskets) are billed at cost, or the client buys from a list we send ahead of time.
+**We charge at booking, not at the end.** Flat packages are paid in full to book; hourly projects pay the 3-hour minimum ($180) to book, then get invoiced after each visit. Booking is also when the sale counts as **Won** in GHL — the sales cycle ends when they book, even if the project runs for months.
 
-### How a job goes
-1. **Free 15-minute call or walkthrough.** Look at the space, ask what's driving them crazy, and take "before" photos.
-2. **Send a quote** with the package, date, and any supply list.
-3. **Day of the job:** empty the space → sort into **Keep / Sell / Donate / Toss** → clean → put things back by category → label.
-4. **Sell pile:** with the client's OK, take it home (or photograph it on-site) and list it within 48 hrs.
-5. **Donate pile:** drop it off the same day, since leaving it with the client defeats the point.
-6. **After photos**, then ask for a review and a referral.
+Supplies (bins, labels, baskets) billed at cost, or the client buys from a list sent ahead of time.
 
-### Supply kit to start (~$75–100)
-- Label maker + tape
-- Clear bins in a few sizes, plus drawer dividers (have a few on hand to sell to clients at cost)
-- Heavy-duty trash bags, 4 big bins or bags marked KEEP / SELL / DONATE / TOSS
-- Cleaning wipes, microfiber cloths, a hand vacuum
-- Measuring tape, a notepad
-
-### Finding the first clients
-- Organize our own house first. It gives us practice plus our first before/after photos.
-- Post before/afters in local Facebook groups and on Nextdoor.
-- Tell friends, neighbors, school parents, and church and community contacts.
-- Offer 2–3 friends a discounted "portfolio job" in exchange for photos + a review.
-- Good seasons: back-to-school (closets, homework stations), before the holidays (make room for gifts), January (resolutions), and spring cleaning.
-
----
-
-## Part 2: Marketplace reselling
-
-### What to sell first
-Start with **our own house**. It's free inventory and good practice. Things that sell well locally:
-- Furniture (dressers, nightstands, shelves, desks, and patio sets sell fastest)
-- Kids' gear and toys (bikes, strollers, LEGO, bundles of kids' clothes by size)
-- Brand-name clothes, shoes, and bags
-- Home decor, lamps, mirrors, rugs
-- Small kitchen appliances (air fryers, stand mixers, Instant Pots)
-- Tools, sports equipment, and seasonal stuff (sell it *before* the season: sleds in October, bikes in March)
-
-Skip anything broken, recalled, or dirty. Car seats and cribs have safety rules, so check before listing them.
-
-### How to make a listing that sells
-- **Photos (Honey's job):** use daylight near a window with a plain background. Take 4–8 photos, including the front, back, close-ups, any flaws, and something that shows the size.
-- **Title:** brand + item + key detail. For example: "IKEA Hemnes 6-Drawer Dresser – White".
-- **Price:** search for sold or similar listings nearby and price a little above what you'll take, since people haggle. Round numbers work best.
-- **Description:** size, condition (be honest about flaws), pickup area, and "cash or Venmo."
-- **Bundle** small, cheap items together, like "Box of 20 kids' books – $15."
-- **Renew or drop the price** by about 10–15% if an item hasn't sold in 7 days.
-
-### Safe selling rules
-- Meet in a public place or a police station "safe exchange zone." For big furniture, do porch pickup with Marie home, and never let buyers inside.
-- Get paid before the item leaves: cash or Venmo/Zelle. Never accept checks or "I'll send extra, just give it to my mover" offers (that's a scam).
-- Don't give out a phone number or home address until pickup is confirmed.
-- Honey never meets buyers or messages with them alone.
-
----
+## Marketplace reselling — our own inventory
+Same pipeline as client Sell-It-For-You items (`sop/07`), tracked in `tracker/inventory.csv` → `tracker/sales.csv` instead of `tracker/marketplace-items.csv`. Start with our own house — free inventory, good practice, first portfolio photos. Sells well locally: furniture, kids' gear/toys, brand-name clothes/shoes, home decor, small appliances, tools & seasonal gear (sell *before* the season). Skip anything broken, recalled, or dirty — check car seats/cribs against cpsc.gov recalls first.
 
 ## Money
-
-- Log every sale and job in [`tracker/sales.csv`](tracker/sales.csv) and every expense in [`tracker/expenses.csv`](tracker/expenses.csv).
-- **Split between Marie and Honey:** agree on this up front and write it down here. One option is to take expenses out first, then split what's left 50/50. Another is that Honey gets a set amount per hour or job plus a bonus.
-  - Our split: `__________`
-- Consider putting a slice of every payout (maybe 10–20%) into Honey's savings.
-- Keep receipts. Side income is taxable, so check with Marie's accountant about how to report it.
-
----
+- Log every sale/job in `tracker/sales.csv`, every expense in `tracker/expenses.csv`, every client Sell-It-For-You item in `tracker/marketplace-items.csv`.
+- **Marie/Honey split:** agree on this and write it here. `__________`
+- Consider putting 10–20% of every payout into Honey's savings.
+- Open a separate business bank account and keep every receipt — see `sop/09` before this grows past a hobby.
 
 ## First 30 days
+**Week 1**
+- [ ] Fill in the money split above
+- [ ] Buy the supply kit (label maker, clear bins, drawer dividers, trash bags, 4 labeled Keep/Sell/Donate/Toss bins, cleaning supplies, measuring tape)
+- [ ] Create the GHL sub-account and build it from `ghl/build-sheet.md` and `ghl/microsite-copy.md`
+- [ ] Get liability insurance quotes (`sop/09`)
+- [ ] Pick our code word and our check-in adult (`sop/11`, Part 3)
+- [ ] Organize one space in our own house using the full SOP flow, start to finish, as a dry run
 
-**Week 1 — Get set up**
-- [ ] Agree on the money split and fill it in above
-- [ ] Buy the supply kit
-- [ ] Pick a business name (ideas: *Honey & Hale Home*, *Sweet Spaces*, *The Honey Method*)
-- [ ] Organize one space in our own house, taking before/after photos
-
-**Week 2 — Start selling**
-- [ ] Walk the house and make a Sell pile
-- [ ] List the first 10 items on Marketplace
+**Week 2**
+- [ ] Run the full AI pipeline once end-to-end on our own house (Initial Assessment → session → Progress Report → Workbook)
+- [ ] List the first 10 items from our own Sell pile
 - [ ] Organize a second space at home
 
-**Week 3 — Go public**
-- [ ] Make a simple flyer and social post with our before/afters
-- [ ] Post in local groups and on Nextdoor
-- [ ] Book 1–2 discounted portfolio jobs with friends
+**Week 3**
+- [ ] Book 1–2 discounted "practice" jobs with friends or family (photos + honest feedback in exchange)
+- [ ] Ask each one: "who else do you know who'd want this?" — this is the referral list you'll work from
+- [ ] (Optional fallback only, not the default plan) post before/afters in local Facebook groups or Nextdoor — see `templates/social-post.md`
 
-**Week 4 — First real clients**
-- [ ] Do the first paid job
-- [ ] Sell items from the client's Sell pile using the 70/30 add-on
-- [ ] Review the tracker: what sold, what made the most per hour, and what to change
+**Week 4**
+- [ ] First real paid client via referral, full journey start to finish
+- [ ] Ask for a referral in their final workbook (`sop/09`, section 7) and log who sent them in `tracker/clients.csv`
+- [ ] Review the trackers: what made the most per hour, what to change
 
----
-
-## Files in this repo
-- `README.md` — this plan
-- `tracker/sales.csv` — every sale and organizing job
-- `tracker/expenses.csv` — supplies, gas, fees
-- `tracker/inventory.csv` — items waiting to be listed or sold
-- `templates/` — copy/paste text for listings, client quotes, and social posts
+## Repo map
+```
+BRAND.md              brand voice, colors, tagline
+sop/                   the step-by-step manual, 01-10, read in order once
+prompts/               copy-paste AI prompts for reports, workbook copy, and marketplace
+templates/             fill-in-the-blank docs: quotes, reports, workbook, waiver, listings
+tracker/               clients.csv, sessions.csv, sales.csv, expenses.csv, inventory.csv, marketplace-items.csv
+ghl/                   CRM/booking/automation build sheet + microsite copy for GoHighLevel
+```
