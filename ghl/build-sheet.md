@@ -151,7 +151,8 @@ Each workflow below is written as one paste-ready paragraph for GHL's **Automati
 If Workflow AI can't attach the invoice itself (depends on how Payments is set up in the sub-account), keep everything else and let it create a task instead: "Send [contact name]'s booking invoice now" — the Won status and the reminders still run automatically.
 
 For hourly projects that run over multiple visits: invoice the remaining hours after each visit (same unpaid-reminder pattern). Charging never waits for the project to finish.
- → Send Walkthrough Link (build after the two safety tags exist)
+
+### J. Safety Cleared → Send Walkthrough Link
 > When the tag safety-cleared is added to a contact, send them this message by both email and SMS: "Great news, Honey — the library is open! Grab a time for your free walkthrough here: [Free Discovery Walkthrough booking link]. No prep needed, and please don't tidy up first." Then move their opportunity in the Home Reset Pipeline to the Walkthrough Booked stage only after they book an appointment on the Free Discovery Walkthrough calendar. When the tag safety-declined is added instead, send nothing automatically, move the opportunity status to Lost, and create a task for Marie: "Send the polite decline to [contact name] (script in sop/11)."
 
 Why a separate workflow: the walkthrough calendar link is never public (not on the microsite, not in Workflow A). The only way a stranger gets into our calendar is through `safety-cleared`. See `sop/11-safety-screening.md`.
